@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImageService, SiteImage } from '../../services/image.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,5 +8,18 @@ import { Component } from '@angular/core';
   styleUrl: './portfolio.css',
 })
 export class Portfolio {
+  readonly images: SiteImage[];
+  selectedImage: SiteImage | null = null;
 
+  constructor(private readonly imageService: ImageService) {
+    this.images = this.imageService.getPortfolioImages();
+  }
+
+  openImage(image: SiteImage): void {
+    this.selectedImage = image;
+  }
+
+  closeImage(): void {
+    this.selectedImage = null;
+  }
 }

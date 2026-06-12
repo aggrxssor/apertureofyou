@@ -1,1 +1,27 @@
-<p>gallery works!</p>
+<section class="gallery-page" aria-labelledby="gallery-title">
+    <div class="gallery-heading">
+        <p class="gallery-kicker"></p>
+        <h2 id="gallery-title" class="gallery-title"></h2>
+        <p class="gallery-intro"></p>
+    </div>
+
+    <div *ngIf="images.length; else emptyGallery" class="grid-wrapper">
+        <button
+            *ngFor="let image of images"
+            class="grid-item"
+            [ngClass]="image.orientation"
+            type="button"
+            (click)="openImage(image)"
+        >
+            <img [src]="image.thumbnailUrl" [alt]="image.alt" loading="lazy" />
+        </button>
+    </div>
+
+    <ng-template #emptyGallery>
+        <div class="gallery-empty">
+            <p></p>
+        </div>
+    </ng-template>
+</section>
+
+<app-image-modal [image]="selectedImage" (closeModal)="closeImage()"></app-image-modal>

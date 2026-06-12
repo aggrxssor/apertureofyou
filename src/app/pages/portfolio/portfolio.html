@@ -1,1 +1,30 @@
-<p>portfolio works!</p>
+<section class="portfolio-page" aria-labelledby="portfolio-title">
+    
+
+    <div *ngIf="images.length; else emptyPortfolio" class="grid-wrapper">
+        <button
+            *ngFor="let image of images"
+            class="grid-item"
+            [ngClass]="image.orientation"
+            type="button"
+            (click)="openImage(image)">
+            <img [src]="image.thumbnailUrl" [alt]="image.alt" loading="lazy" />
+        </button>
+    </div>
+
+    <ng-template #emptyPortfolio>
+        <div class="portfolio-empty">
+            <p></p>
+        </div>
+    </ng-template>
+
+    <div class="portfolio-heading">
+        <p class="portfolio-kicker">A selection of my favorite photos</p>
+        <h2 id="portfolio-title" class="portfolio-title">Interested?</h2>
+        <p class="portfolio-intro">Contact</p>
+    </div>
+</section>
+
+
+
+<app-image-modal [image]="selectedImage" (closeModal)="closeImage()"></app-image-modal>

@@ -12,10 +12,10 @@ const routes: Routes = [
   { path: "contact", component: Contact },
   { path: "gallery", component: Gallery },
   { path: "portfolio", component: Portfolio },
-  { path: "packages", component: Services },
+  { path: "services", component: Services },
   { path: "about", component: About },
   { path: "", redirectTo: "/apertureofyou", pathMatch: "full" },
-  { path: "**", redirectTo: "/404", pathMatch: "full" }
+  { path: "**", redirectTo: "/apertureofyou", pathMatch: "full" }
 ];
 
 @NgModule({

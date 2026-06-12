@@ -1,0 +1,11 @@
+.error-page {
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    background: #f7f4ef;
+}
+
+.error-page p {
+    min-height: 1.8rem;
+    width: min(420px, 70vw);
+}

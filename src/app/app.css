@@ -1,0 +1,9 @@
+.page-content{
+    padding-top: 95px;
+}
+
+@media (max-width: 991px) {
+    .page-content {
+        padding-top: 130px;
+    }
+    }

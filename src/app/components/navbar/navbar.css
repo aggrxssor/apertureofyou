@@ -1,0 +1,100 @@
+.glass{
+    background: rgba(26,26,26,0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.155);
+    border-radius: 2px;
+
+    background-image: url(/photography_website/src/assets/noise.svg);
+    background-size: 50px 50px;
+    opacity: 0.9;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    
+    transition: transform 0.2s ease-in-out, 
+                background 0.3s ease-in-out, 
+                backdrop-filter 0.3s ease-in-out, 
+                -webkit-backdrop-filter 0.3s ease-in-out; 
+}
+.header-hidden {
+    transform: translateY(-100%); 
+}
+.site-title {
+    font-size: 2.2rem;
+    font-weight: 450; 
+    letter-spacing: 3px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+}
+.navbar-nav:hover .nav-link {
+    opacity: 50%;
+    transition: 0.2s;
+}
+.navbar-nav .nav-item:hover .nav-link {
+    opacity: 100%;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+}
+
+.nav-item{
+    font-size: 1.2rem;
+}
+
+.is-absolute {
+    position: absolute !important;
+    transition: transform 0s, 
+                background 0.5s ease-out, 
+                backdrop-filter 0.5s ease-out, 
+                -webkit-backdrop-filter 0.5s ease-out,
+                border 0.5s ease-out !important;
+}
+
+.dropdown-menu{
+    background: rgba(26,26,26,0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 2px;
+
+    background-image: url(/photography_website/src/assets/noise.svg);
+    background-size: 50px 50px;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.dropdown-item:hover{
+    color: black;
+}
+
+
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 0.5rem;
+        
+        animation: fadeIn 0.2s ease-in-out; 
+    }
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
