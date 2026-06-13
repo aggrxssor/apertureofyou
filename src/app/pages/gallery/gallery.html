@@ -1,13 +1,23 @@
 <section class="gallery-page" aria-labelledby="gallery-title">
+    
+    <div class="gallery-header-row">
+        <div class="gallery-nav-left">
+            <a *ngIf="activeCountry" routerLink="/gallery" class="back-button">&lt; All</a>
+        </div>
+        
+        <p class="gallery-kicker">{{ activeCountry ? activeCountry : 'World Collection' }}</p>
+        
+        <div class="gallery-nav-right">
+            </div>
+    </div>
+
     <div class="gallery-heading">
-        <p class="gallery-kicker"></p>
-        <h2 id="gallery-title" class="gallery-title"></h2>
         <p class="gallery-intro"></p>
     </div>
 
-    <div *ngIf="images.length; else emptyGallery" class="grid-wrapper">
+    <div *ngIf="filteredImages.length; else emptyGallery" class="grid-wrapper">
         <button
-            *ngFor="let image of images"
+            *ngFor="let image of filteredImages"
             class="grid-item"
             [ngClass]="image.orientation"
             type="button"
@@ -19,9 +29,15 @@
 
     <ng-template #emptyGallery>
         <div class="gallery-empty">
-            <p></p>
+            <p>No photographs found for this location.</p>
         </div>
     </ng-template>
+
+    <div class="portfolio-heading">
+        <p class="portfolio-kicker"></p>
+        <h2 id="portfolio-title" class="portfolio-title"></h2>
+        <p class="portfolio-intro"></p>
+    </div>
 </section>
 
 <app-image-modal [image]="selectedImage" (closeModal)="closeImage()"></app-image-modal>

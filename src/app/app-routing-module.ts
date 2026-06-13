@@ -10,7 +10,8 @@ import { About } from './pages/about/about';
 const routes: Routes = [
   { path: "apertureofyou", component: Home },
   { path: "contact", component: Contact },
-  { path: "gallery", component: Gallery },
+  { path: "gallery", component: Gallery, data: {headerTheme: 'dark-header'} },
+  { path: 'gallery/:country', component: Gallery, data: {headerTheme: 'dark-header'} },
   { path: "portfolio", component: Portfolio },
   { path: "services", component: Services },
   { path: "about", component: About },
@@ -22,4 +23,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+  
+}

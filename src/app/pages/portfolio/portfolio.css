@@ -1,6 +1,8 @@
 .portfolio-page {
     min-height: 100vh;
-    background: #f7f4ef;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #ffffff;
     color: #1a1a1a;
 }
 
