@@ -14,9 +14,19 @@ export class Navbar implements OnInit {
     isGlass = false;
     lastScrollTop = 0;
 
-    currentHeaderClass: string | null = null;
+    isMobileMenuOpen = false;
+    isGalleryExpanded = false;
 
-    constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
+    currentHeaderClass: string | null = null;
+    currentLang: string = 'en';
+
+    constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
+
+    switchLanguage(lang: string) {
+        this.currentLang = lang;
+        console.log(`Language switched to: ${lang}`);
+        
+    }
 
     ngOnInit() {
         this.router.events.pipe(
@@ -64,5 +74,25 @@ export class Navbar implements OnInit {
         }
 
         this.lastScrollTop = currentScrollTop;
+    }
+
+    toggleMobileMenu() {
+        this.isMobileMenuOpen = !this.isMobileMenuOpen;
+        
+        if (this.isMobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+
+    closeMobileMenu() {
+        this.isMobileMenuOpen = false;
+        this.isGalleryExpanded = false;
+        document.body.style.overflow = '';
+    }
+
+    toggleGallery() {
+        this.isGalleryExpanded = !this.isGalleryExpanded;
     }
 }

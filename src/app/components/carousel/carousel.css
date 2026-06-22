@@ -29,3 +29,13 @@
     opacity: 1;
     background: rgba(26,26,26,0.55); 
 }
+
+@media (max-width: 767px) {
+
+    .carousel-item img{
+        height: 30vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}

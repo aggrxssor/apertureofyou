@@ -8,15 +8,14 @@ import { Services } from './pages/services/services';
 import { About } from './pages/about/about';
 
 const routes: Routes = [
-  { path: "apertureofyou", component: Home },
-  { path: "contact", component: Contact },
-  { path: "gallery", component: Gallery, data: {headerTheme: 'dark-header'} },
-  { path: 'gallery/:country', component: Gallery, data: {headerTheme: 'dark-header'} },
-  { path: "portfolio", component: Portfolio },
-  { path: "services", component: Services },
-  { path: "about", component: About },
-  { path: "", redirectTo: "/apertureofyou", pathMatch: "full" },
-  { path: "**", redirectTo: "/apertureofyou", pathMatch: "full" }
+  { path: "", component: Home, title: 'Aperture of You' },
+  { path: "contact", component: Contact, title: 'Contact | Aperture of You'},
+  { path: "gallery", component: Gallery, data: {headerTheme: 'dark-header'}, title: 'Gallery | Aperture of You' },
+  { path: 'gallery/:country', component: Gallery, data: {headerTheme: 'dark-header'}, title: 'Gallery | Aperture of You' },
+  { path: "portfolio", component: Portfolio, title: 'Portfolio | Aperture of You' },
+  { path: "services", component: Services, data: {headerTheme: 'dark-header'}, title: 'Services | Aperture of You' },
+  { path: "about", component: About, title: 'About | Aperture of You' },
+  { path: "**", redirectTo: "", pathMatch: "full" }
 ];
 
 @NgModule({

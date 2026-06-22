@@ -86,6 +86,24 @@ export class ImageService {
       id: 'tatra-field.jpg',
       title: '',
       alt: 'Panoramic portfolio photograph',
+      thumbnailUrl: '/assets/thumbnails/portfolio/hungary15.jpg',
+      midSizedUrl: '/assets/mid-sized/portfolio/hungary15.jpg',
+      orientation: 'portrait',
+      location: 'hungary'
+    },
+    {
+      id: 'tatra-field.jpg',
+      title: '',
+      alt: 'Panoramic portfolio photograph',
+      thumbnailUrl: '/assets/thumbnails/portfolio/hungary14.jpg',
+      midSizedUrl: '/assets/mid-sized/portfolio/hungary14.jpg',
+      orientation: 'landscape',
+      location: 'hungary'
+    },
+    {
+      id: 'tatra-field.jpg',
+      title: '',
+      alt: 'Panoramic portfolio photograph',
       thumbnailUrl: '/assets/thumbnails/portfolio/hungary10.jpg',
       midSizedUrl: '/assets/mid-sized/portfolio/hungary10.jpg',
       orientation: 'ultrawide',
@@ -159,8 +177,8 @@ export class ImageService {
       id: 'tatra-field.jpg',
       title: '',
       alt: 'Panoramic portfolio photograph',
-      thumbnailUrl: '/assets/thumbnails/portfolio/hungary5.jpg',
-      midSizedUrl: '/assets/mid-sized/portfolio/hungary5.jpg',
+      thumbnailUrl: '/assets/thumbnails/portfolio/hungary16.jpg',
+      midSizedUrl: '/assets/mid-sized/portfolio/hungary16.jpg',
       orientation: 'portrait',
       location: 'hungary'
     },
@@ -285,8 +303,8 @@ export class ImageService {
       id: 'tatra-field.jpg',
       title: '',
       alt: 'Panoramic portfolio photograph',
-      thumbnailUrl: '/assets/thumbnails/portfolio/hungary.jpg',
-      midSizedUrl: '/assets/mid-sized/portfolio/hungary.jpg',
+      thumbnailUrl: '/assets/thumbnails/portfolio/hungary5.jpg',
+      midSizedUrl: '/assets/mid-sized/portfolio/hungary5.jpg',
       orientation: 'portrait',
       location: 'hungary'
     },
@@ -438,6 +456,25 @@ export class ImageService {
       orientation: 'portrait',
       location: 'spain'
     },
+    
+    {
+      id: 'tatra-field.jpg',
+      title: '',
+      alt: 'Panoramic portfolio photograph',
+      thumbnailUrl: '/assets/thumbnails/portfolio/hungary15.jpg',
+      midSizedUrl: '/assets/mid-sized/portfolio/hungary15.jpg',
+      orientation: 'portrait',
+      location: 'hungary'
+    },
+    {
+      id: 'tatra-field.jpg',
+      title: '',
+      alt: 'Panoramic portfolio photograph',
+      thumbnailUrl: '/assets/thumbnails/portfolio/hungary16.jpg',
+      midSizedUrl: '/assets/mid-sized/portfolio/hungary16.jpg',
+      orientation: 'portrait',
+      location: 'hungary'
+    },
     {
       id: 'tatra-field.jpg',
       title: '',
@@ -605,6 +642,15 @@ export class ImageService {
       id: 'tatra-field.jpg',
       title: '',
       alt: 'Panoramic portfolio photograph',
+      thumbnailUrl: '/assets/thumbnails/portfolio/hungary14.jpg',
+      midSizedUrl: '/assets/mid-sized/portfolio/hungary14.jpg',
+      orientation: 'panorama',
+      location: 'hungary'
+    },
+    {
+      id: 'tatra-field.jpg',
+      title: '',
+      alt: 'Panoramic portfolio photograph',
       thumbnailUrl: '/assets/thumbnails/portfolio/hungary11.jpg',
       midSizedUrl: '/assets/mid-sized/portfolio/hungary11.jpg',
       orientation: 'portrait',
@@ -628,6 +674,26 @@ export class ImageService {
       orientation: 'portrait',
       location: 'spain'
     },
+    {
+      id: 'tatra-field.jpg',
+      title: '',
+      alt: 'Panoramic portfolio photograph',
+      thumbnailUrl: '/assets/thumbnails/portfolio/hungary13.jpg',
+      midSizedUrl: '/assets/mid-sized/portfolio/hungary13.jpg',
+      orientation: 'panorama',
+      location: 'hungary'
+    },
+    
+    {
+      id: 'tatra-field.jpg',
+      title: '',
+      alt: 'Panoramic portfolio photograph',
+      thumbnailUrl: '/assets/thumbnails/portfolio/hungary12.jpg',
+      midSizedUrl: '/assets/mid-sized/portfolio/hungary12.jpg',
+      orientation: 'panorama',
+      location: 'hungary'
+    },
+    
   ];
 
   getPortfolioImages(): SiteImage[] {

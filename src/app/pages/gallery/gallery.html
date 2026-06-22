@@ -5,7 +5,18 @@
             <a *ngIf="activeCountry" routerLink="/gallery" class="back-button">&lt; All</a>
         </div>
         
-        <p class="gallery-kicker">{{ activeCountry ? activeCountry : 'World Collection' }}</p>
+        <div class="gallery-kicker-container" *ngIf="activeCountry">
+            <span class="gallery-kicker active-label">{{ activeCountry }}</span>
+        </div>
+
+        <div class="gallery-kicker-container" *ngIf="!activeCountry">
+            <ng-container *ngFor="let country of countries; let isLast = last">
+                <button class="country-link" (click)="selectCountry(country)">
+                    {{ country }}
+                </button>
+                <span class="country-separator" *ngIf="!isLast"> | </span>
+            </ng-container>
+        </div>
         
         <div class="gallery-nav-right">
             </div>

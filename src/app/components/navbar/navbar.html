@@ -4,33 +4,32 @@
         [class.header-hidden]="isHidden" 
         [class.is-absolute]="isAbsolute">
 
-    <div class="container d-flex flex-column align-items-center pt-4 pb-2">
+    <div class="container d-flex flex-row flex-lg-column justify-content-between align-items-center pt-4 pb-2">
         
-        <h1 class="site-title m-0 mb-4" role="button" routerLink="apertureofyou">Aperture of You</h1>
+        <h1 class="site-title m-0 mb-lg-4 d-flex align-items-center gap-3" role="button" routerLink="/">
+            <img src="assets/hero/apertureofu_b&w.png" alt="Aperture of You Logo" class="nav-logo" />
+            <span>Aperture of You</span>
+        </h1>
 
-        <nav class="navbar navbar-expand-lg w-100 p-0">
-            
-            <button class="navbar-toggler mx-auto mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                <ul class="navbar-nav gap-lg-4 mt-2">
+        <button class="mobile-menu-btn d-lg-none" (click)="toggleMobileMenu()" aria-label="Menu">
+            &lt;
+        </button>
+
+        <nav class="navbar navbar-expand-lg w-100 p-0 position-relative d-none d-lg-flex">
+                    
+            <div class="collapse navbar-collapse justify-content-center w-100" id="navbarNavDropdown">
+                
+                <ul class="navbar-nav gap-lg-4 mt-2 align-items-center">
 
                     <li class="nav-item">
                         <a class="nav-link text-uppercase" routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
                     </li>
 
                     <li class="nav-item dropdown d-flex align-items-center">
-    
-                        <a class="nav-link text-uppercase pe-1" routerLink="/gallery" routerLinkActive="active">
-                            Gallery
-                        </a>
-
+                        <a class="nav-link text-uppercase pe-1" routerLink="/gallery" routerLinkActive="active">Gallery</a>
                         <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;">
                             <span class="visually-hidden">Toggle Dropdown</span>
                         </a>
-
                         <ul class="dropdown-menu m-0">
                             <li><a class="dropdown-item" routerLink="/gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">All</a></li>
                             <li><a class="dropdown-item" routerLink="/gallery/czechia" routerLinkActive="active">Czechia</a></li>
@@ -39,7 +38,6 @@
                             <li><a class="dropdown-item" routerLink="/gallery/slovakia" routerLinkActive="active">Slovakia</a></li>
                             <li><a class="dropdown-item" routerLink="/gallery/spain" routerLinkActive="active">Spain</a></li>
                         </ul>
-
                     </li>
 
                     <li class="nav-item">
@@ -55,8 +53,69 @@
                     </li>
 
                 </ul>
+
+                <div class="nav-lang-wrapper mt-4 mt-lg-0">
+                    <div class="nav-lang-switcher">
+                        <button type="button" class="nav-lang-btn active" (click)="switchLanguage('en')">
+                            <img src="assets/flag-for-flag-united-kingdom-svgrepo-com.svg" class="nav-flag-icon" alt="English">
+                            EN
+                        </button>
+                        <span class="nav-lang-divider">|</span>
+                        <button type="button" class="nav-lang-btn" (click)="switchLanguage('hu')">
+                            <img src="assets/flag-for-flag-hungary-svgrepo-com.svg" class="nav-flag-icon" alt="Hungarian">
+                            HU
+                        </button>
+                    </div>
+                </div>
+
             </div>
-            
         </nav>
     </div>
 </header>
+
+<div class="mobile-slider-overlay" [class.open]="isMobileMenuOpen">
+    
+    <div class="slider-close-bar" (click)="closeMobileMenu()">
+        <span class="slider-close-icon">&gt;</span>
+    </div>
+
+    <div class="slider-content">
+        
+        <ul class="slider-links">
+            <li><a routerLink="/portfolio" routerLinkActive="active" (click)="closeMobileMenu()">Portfolio</a></li>
+            
+            <li class="slider-accordion-wrapper">
+                <div class="slider-accordion-toggle" (click)="toggleGallery()">
+                    <span [class.fw-bold]="isGalleryExpanded">Gallery</span>
+                    <span class="accordion-arrow" [class.rotated]="isGalleryExpanded">▼</span>
+                </div>
+                
+                <div class="slider-accordion-content" [class.expanded]="isGalleryExpanded">
+                    <a routerLink="/gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">All</a>
+                    <a routerLink="/gallery/czechia" routerLinkActive="active" (click)="closeMobileMenu()">Czechia</a>
+                    <a routerLink="/gallery/hungary" routerLinkActive="active" (click)="closeMobileMenu()">Hungary</a>
+                    <a routerLink="/gallery/morocco" routerLinkActive="active" (click)="closeMobileMenu()">Morocco</a>
+                    <a routerLink="/gallery/slovakia" routerLinkActive="active" (click)="closeMobileMenu()">Slovakia</a>
+                    <a routerLink="/gallery/spain" routerLinkActive="active" (click)="closeMobileMenu()">Spain</a>
+                </div>
+            </li>
+
+            <li><a routerLink="/services" routerLinkActive="active" (click)="closeMobileMenu()">Services</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMobileMenu()">Contact</a></li>
+            <li><a routerLink="/about" routerLinkActive="active" (click)="closeMobileMenu()">About</a></li>
+        </ul>
+
+        <div class="slider-lang-switcher">
+            <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'en'" (click)="switchLanguage('en'); closeMobileMenu()">
+                <img src="assets/flag-for-flag-united-kingdom-svgrepo-com.svg" class="nav-flag-icon" alt="English">
+                EN
+            </button>
+            <span class="nav-lang-divider" style="color: #1a1a1a">|</span>
+            <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'hu'" (click)="switchLanguage('hu'); closeMobileMenu()">
+                <img src="assets/flag-for-flag-hungary-svgrepo-com.svg" class="nav-flag-icon" alt="Hungarian">
+                HU
+            </button>
+        </div>
+
+    </div>
+</div>

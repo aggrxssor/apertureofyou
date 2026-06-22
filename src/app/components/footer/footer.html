@@ -1,1 +1,68 @@
-<p>footer works!</p>
+<footer class="site-footer">
+    
+    <div class="footer-top-section">
+        <div class="container">
+            <div class="row text-center">
+                
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li><a routerLink="/gallery">Portfolio</a></li>
+                        <li><a routerLink="/services">Services</a></li>
+                        <li><a routerLink="/about">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <h4 class="footer-heading" routerLink="/connect" role="button">Connect</h4>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li>
+                            <a href="https://www.instagram.com/apertureofyou/" class="icon-link" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/instagram-glyph-1-logo-svgrepo-com.svg" class="footer-icon" alt="Instagram">
+                                Instagram
+                            </a>
+                        </li>
+                        <li><a routerLink="/services">hello@apertureofyou.com</a></li>
+                        <li><a routerLink="/about">webdesign@apertureofyou.com</a></li>
+                    
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="footer-heading">Language</h4>
+                    <div class="language-switcher">
+                        
+                        <button type="button" class="lang-btn active" (click)="switchLanguage('en')">
+                            <img src="assets/flag-for-flag-united-kingdom-svgrepo-com.svg" class="colored-footer-icon" alt="English">
+                            EN
+                        </button>
+                        
+                        <span class="lang-divider">|</span>
+                        
+                        <button type="button" class="lang-btn" (click)="switchLanguage('hu')">
+                            <img src="assets/flag-for-flag-hungary-svgrepo-com.svg" class="colored-footer-icon" alt="Hungarian">
+                            HU
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom-section">
+
+        <div class="container text-center">
+            <p class="footer-legal">
+                Aperture of You is located in Budapest, Hungary. | <a routerLink="/contact" class="legal-link">Contact</a>
+            </p>
+            <p class="footer-legal">
+                All images, text and website design &copy; Aperture of You 2026.
+            </p>
+            <p class="footer-legal mb-0">
+                Please note that this website is monitored and unauthorised reproduction is prohibited. Offenders will face legal action.
+            </p>
+        </div>
+    </div>
+</footer>

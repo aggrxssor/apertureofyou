@@ -1,0 +1,106 @@
+
+.about-page {
+    background: #f7f4ef;
+    color: #1a1a1a;
+    min-height: 100vh;
+}
+
+.about-hero {
+    height: 70vh;
+    width: 100%;
+    background-image:url('/assets/hero/about_hero.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-section {
+    padding: 6rem 1.5rem;
+    background: #f7f4ef;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 550px;
+    text-align: left;
+}
+
+.section-kicker {
+    min-height: 1.2rem;
+    margin-bottom: 1.35rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    min-height: clamp(2.6rem, 5vw, 4.6rem);
+    margin-bottom: 2rem;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 350;
+    line-height: 1.12;
+    letter-spacing: 1.5px;
+}
+
+.section-text {
+    margin-bottom: 1.1rem;
+    font-size: clamp(1rem, 1.6vw, 1.18rem);
+    line-height: 1.65;
+    letter-spacing: 0.2px;
+}
+
+.section-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-img {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12); 
+}
+
+@media (max-width: 900px) {
+    .about-hero {
+        height: 68vh;
+    }
+    
+    .about-section {
+        padding: 4.5rem 1.25rem;
+    }
+
+    .about-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 4rem;
+    }
+    .about-text {
+        text-align: center;
+    }
+
+    .circle-img {
+        max-width: 320px;
+    }
+}

@@ -1,1 +1,50 @@
-<p>contact works!</p>
+<section class="contact-page">
+    
+    <section class="hero-section contact-hero" aria-label="Contact featured panorama"></section>
+
+    <section class="contact-section">
+        <div class="contact-options-container">
+            
+            <article class="contact-card">
+                <p class="section-kicker">Photography</p>
+                <h3 class="contact-card-title">Interested in a session?</h3>
+                <p class="section-text">
+                    For private client sessions, conceptual work, and print inquiries.
+                </p>
+                <button (click)="copyEmail('hello@apertureofyou.com')" class="service-cta">hello@apertureofyou.com</button>
+            </article>
+
+            <article class="contact-card">
+                <p class="section-kicker">Digital Architecture</p>
+                <h3 class="contact-card-title">Discuss a web project</h3>
+                <p class="section-text">
+                    For bespoke portfolio and premium website design inquiries.
+                </p>
+                <button (click)="copyEmail('webdesign@apertureofyou.com')" class="service-cta">webdesign@apertureofyou.com</button>
+            </article>
+
+        </div>
+
+        <div class="contact-details-footer">
+            <div class="info-block">
+                <h3 class="info-kicker">Location</h3>
+                <p class="section-text">
+                    Based in Hungary.<br>
+                    Available for private client sessions worldwide.
+                </p>
+            </div>
+            
+            <div class="info-block">
+                <h3 class="info-kicker">Socials</h3>
+                <p class="section-text">
+                    <a href="https://www.instagram.com/apertureofyou/" class="contact-link">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+</section>
+
+<div class="glass-toast" [class.toast-visible]="showToast">
+    <p class="m-0">Email address copied to clipboard.</p>
+</div>
