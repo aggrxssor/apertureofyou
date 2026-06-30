@@ -1,6 +1,6 @@
 # Aperture of You
 
-ApertureofYou is a personal photography portfolio built with Angular. The project serves as a platform to showcase my photography while also demonstrating my frontend development skills.
+Aperture of You is a personal photography portfolio built with Angular. The project serves as a platform to showcase my photography while also demonstrating my frontend development skills.
 
 The website was created as a personal project to host the images I've taken over the years and to expand both my photography and software development portfolio.
 
