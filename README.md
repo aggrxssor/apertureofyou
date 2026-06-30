@@ -4,7 +4,7 @@ Aperture of You is a personal photography portfolio built with Angular. The proj
 
 The website was created as a personal project to host the images I've taken over the years and to expand both my photography and software development portfolio.
 
-All images on the website are protected by copyright and may not be used, reproduced, or distributed without permission.
+All images on the website are subject to copyright.
 
 # GALLERY
 
