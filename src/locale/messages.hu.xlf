@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en-US" datatype="plaintext" original="ng2.template">
+        <body>
+        <trans-unit id="4452427314943113135" datatype="html">
+            <source>Previous</source>
+            <target>Előző</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/carousel/carousel.html</context>
+            <context context-type="linenumber">30,31</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="3885497195825665706" datatype="html">
+            <source>Next</source>
+            <target>Következő</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/carousel/carousel.html</context>
+            <context context-type="linenumber">34,35</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="9212705249340904752" datatype="html">
+            <source>Explore</source>
+            <target>Felfedezés</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+            <context context-type="linenumber">8,9</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="9201103587777813545" datatype="html">
+            <source>Portfolio</source>
+            <target>Portfólió</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+            <context context-type="linenumber">10,11</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">25,26</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">83,84</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="7143579180750436311" datatype="html">
+            <source>Services</source>
+            <target>Szolgáltatások</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+            <context context-type="linenumber">11,12</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">44,45</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">101,102</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="1726363342938046830" datatype="html">
+            <source>About</source>
+            <target>Rólam</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+            <context context-type="linenumber">12,13</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">52,53</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">103,104</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="813263746069473514" datatype="html">
+            <source>Connect</source>
+            <target>Kapcsolat</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+            <context context-type="linenumber">17,18</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="2826581353496868063" datatype="html">
+            <source>Language</source>
+            <target>Nyelv</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+            <context context-type="linenumber">30,31</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="6239312552241298451" datatype="html">
+            <source> Aperture of You is located in Budapest, Hungary. | <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot; class=&quot;legal-link&quot;&gt;"/>Contact<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+            <target> Az Aperture of You székhelye Budapesten, Magyarországon található. | <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot; class=&quot;legal-link&quot;&gt;"/>Kapcsolat<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+            <context context-type="linenumber">56,57</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="685897384153303371" datatype="html">
+            <source> All images, text and website design © Aperture of You 2026. </source>
+            <target> Minden kép, szöveg és weboldal-design © Aperture of You 2026. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+            <context context-type="linenumber">59</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="9114785364961053541" datatype="html">
+            <source> Please note that this website is monitored and unauthorised reproduction is prohibited. Offenders will face legal action. </source>
+            <target> Felhívjuk figyelmét, hogy a weboldal tartalmát monitorozzuk, és a jogosulatlan felhasználás vagy másolás tilos. A jogsértők jogi lépésekre számíthatnak. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/footer/footer.html</context>
+            <context context-type="linenumber">62</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="2181154762165715522" datatype="html">
+            <source>Gallery</source>
+            <target>Galéria</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">29,30</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">87,88</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="6783110936904214939" datatype="html">
+            <source>Toggle Dropdown</source>
+            <target>Legördülő menü ki/be</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">31,32</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="1616102757855967475" datatype="html">
+            <source>All</source>
+            <target>Összes</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">34,35</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">93</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="5322511247093866962" datatype="html">
+            <source>Czechia</source>
+            <target>Csehország</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">35,36</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">93,94</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="67794167649611006" datatype="html">
+            <source>Hungary</source>
+            <target>Magyarország</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">36,37</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">94,95</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="2141197120629300851" datatype="html">
+            <source>Morocco</source>
+            <target>Marokkó</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">37,38</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">95,96</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="1331379005917484978" datatype="html">
+            <source>Slovakia</source>
+            <target>Szlovákia</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">38,39</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">96,97</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="3847673789207378086" datatype="html">
+            <source>Spain</source>
+            <target>Spanyolország</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">39,40</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">97,98</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="7922989125096435449" datatype="html">
+            <source>Contact</source>
+            <target>Kapcsolat</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">48,49</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+            <context context-type="linenumber">102,103</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="1511369318875371807" datatype="html">
+            <source>About the Artist</source>
+            <target>A művészről</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/about/about.html</context>
+            <context context-type="linenumber">11,12</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="2503220543961078705" datatype="html">
+            <source>Hello, I&apos;m Mark.</source>
+            <target>Szia, Márk vagyok.</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/about/about.html</context>
+            <context context-type="linenumber">13,14</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="980272084842089237" datatype="html">
+            <source> What began as a quiet fascination with the camera naturally evolved into a lifelong passion. Over time, that pursuit deepened, transforming from a deeply personal hobby into a dedicated profession built around capturing authentic presence. </source>
+            <target> Ami a kamera iránti csendes kíváncsisággal kezdődött, az természetes módon vált életre szóló szenvedéllyé. Az idő múlásával ez a törekvés elmélyült, és egy mélyen személyes hobbiból elhivatott szakmává alakult, amely a valódi jelenlét megörökítésére épül. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/about/about.html</context>
+            <context context-type="linenumber">16,17</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="1378772245854199726" datatype="html">
+            <source> As a cinemaphile, I have always been captivated by the visual language of film—studying the lighting, grading, and atmosphere of my favorite movies. Behind the lens, I realized I could translate that exact silver-screen aesthetic into the real world. </source>
+            <target> Mozirajongóként mindig is lenyűgözött a filmek vizuális nyelvezete – folyamatosan tanulmányoztam a kedvenc filmjeim világítását, színvilágát és atmoszféráját. A lencse mögé állva jöttem rá, hogy ezt a fajta mozis esztétikát a valóságba is át tudom ültetni. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/about/about.html</context>
+            <context context-type="linenumber">21,22</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="159648375164551557" datatype="html">
+            <source> By blending my love for cinema with my distinct photographic process, I developed my own signature style. Today, my work is defined by a cinematic, highly stylized look—creating portraits that feel less like traditional photographs, and more like striking stills from a motion picture. </source>
+            <target> A mozi iránti szeretetem és az egyedi fotográfiai látásmódom ötvözésével alakítottam ki a saját stílusomat. Munkáimat ma egy filmszerű, erősen stilizált képi világ jellemzi – olyan portrékat alkotva, amelyek kevésbé hatnak hagyományos fotóként, sokkal inkább egy játékfilm lenyűgöző képkockáiként. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/about/about.html</context>
+            <context context-type="linenumber">26,27</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="3177401316999940772" datatype="html">
+            <source>Photography</source>
+            <target>Fotózás</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">9,10</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="3349019545297100349" datatype="html">
+            <source>Interested in a session?</source>
+            <target>Szeretnél egy fotózást?</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">10,11</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="5926324904177784998" datatype="html">
+            <source> For private client sessions, conceptual work, and print inquiries. </source>
+            <target> Privát fotózásokkal, konceptuális munkákkal és nyomatrendeléssel kapcsolatos megkeresésekhez. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">12</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="3687073740700725270" datatype="html">
+            <source>Digital Architecture</source>
+            <target>Digitális architektúra</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">18,19</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">135,136</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="2755285755117332869" datatype="html">
+            <source>Discuss a web project</source>
+            <target>Webes projekt megbeszélése</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">19,20</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="5581047278624416221" datatype="html">
+            <source> For bespoke portfolio and premium website design inquiries. </source>
+            <target> Egyedi portfóliók és prémium weboldal-tervezési megkeresésekhez. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">21</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="471816275243265264" datatype="html">
+            <source>Location</source>
+            <target>Helyszín</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">30,31</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="5218153004065630870" datatype="html">
+            <source> Based in Hungary.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Available for private client sessions worldwide. </source>
+            <target> Magyarországi székhellyel.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Világszerte elérhető privát fotózásokra. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">32,33</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="3670532182581004841" datatype="html">
+            <source>Socials</source>
+            <target>Közösségi média</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">38,39</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="3080109816219994129" datatype="html">
+            <source>Instagram</source>
+            <target>Instagram</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">40,41</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="8119235338139511580" datatype="html">
+            <source>Email address copied to clipboard.</source>
+            <target>E-mail cím a vágólapra másolva.</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
+            <context context-type="linenumber">49,50</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="8426817618588177455" datatype="html">
+            <source>&lt; All</source>
+            <target>&lt; Összes</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/gallery/gallery.html</context>
+            <context context-type="linenumber">5,6</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="6087528444959742941" datatype="html">
+            <source>No photographs found for this location.</source>
+            <target>Ezen a helyszínen nem találhatók fényképek.</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/gallery/gallery.html</context>
+            <context context-type="linenumber">43,44</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="3318892826595981501" datatype="html">
+            <source>Crafting cinematic panorama portraits through a vintage lens.</source>
+            <target>Filmszerű panorámaportrék készítése analóg lencsén keresztül.</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">5,7</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="8908207512515051175" datatype="html">
+            <source>Hello, my name is Mark.</source>
+            <target>Szia, a nevem Márk.</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">7,9</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="6609768968908748834" datatype="html">
+            <source> Welcome to Aperture of You. What began as a simple fascination with the camera over 15 years ago has evolved into a dedicated pursuit of portrait photography. Rather than simply taking photographs, I create portraits that capture personality, presence, and character through a distinctive photographic process.</source>
+            <target> Üdvözöllek az Aperture of You oldalon. Ami több mint 15 évvel ezelőtt a kamera iránti puszta kíváncsisággal kezdődött, mára a portréfotózás iránti elhivatott törekvéssé nőtte ki magát. Ahelyett, hogy egyszerűen csak képeket készítenék, egyedi fotográfiai folyamatom révén olyan portrékat alkotok, amelyek visszaadják a személyiséget, a jelenlétet és a karaktert.</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">10,12</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="496748652963346100" datatype="html">
+            <source>The Process</source>
+            <target>A munkafolyamat</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">14,15</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="8620481688257990932" datatype="html">
+            <source>The mosaic panorama technique</source>
+            <target>A mozaik-panoráma technika</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">15,17</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="5198658410212708138" datatype="html">
+            <source> The true distinction of my work lies in the way each portrait is created. Rather than relying on a single exposure, I carefully capture and combine multiple photographs into one seamless mosaic panorama. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> The result is a portrait that combines the character of vintage optics with the precision of modern digital techniques. This approach produces images with extraordinary detail, remarkable depth, and an immersive, almost three-dimensional perspective. </source>
+            <target> Munkáim valódi különlegessége a portrék elkészítésének módjában rejlik. Egyetlen exponálás helyett gondosan több fotót készítek, majd ezeket egyetlen folytonos mozaik-panorámává fűzöm össze. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Az eredmény egy olyan portré, amely ötvözi a klasszikus optikák karakterét a modern digitális technikák precizitásával. Ez a megközelítés rendkívüli részletgazdagságú, lenyűgöző mélységű és magával ragadó, szinte háromdimenziós perspektívájú képeket eredményez. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">18,23</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="95294165850169434" datatype="html">
+            <source>The soul of it all, a 1957 Carl Zeiss Jena Biotar.</source>
+            <target>Mindennek a lelke: egy 1957-es Carl Zeiss Jena Biotar.</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">35,37</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="1385616436544845921" datatype="html">
+            <source> Every photographer develops their own visual signature. Mine is defined in part by my choice of lens – a beautiful piece of imperfection, produced in 1957. Contemporary lenses are engineered for technical perfection; mine brings character, subtle imperfections, and a distinctive rendering that gives each image a unique visual identity. </source>
+            <target> Minden fotós kialakítja a saját vizuális védjegyét. Az enyémet részben a lencseválasztásom határozza meg – a tökéletlenség egy gyönyörű darabja, amely 1957-ben készült. A mai modern objektíveket a technikai tökéletességre tervezik; az enyém karaktert, finom tökéletlenségeket és olyan jellegzetes leképezést hordoz, amely minden képnek egyedi vizuális identitást ad. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">38,40</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="5760214615970998269" datatype="html">
+            <source>Interested?</source>
+            <target>Felkeltette az érdeklődésed?</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">47,48</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/portfolio/portfolio.html</context>
+            <context context-type="linenumber">23,24</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="925721456857320173" datatype="html">
+            <source> I am currently accepting private client sessions. Whether you are looking for a moody individual portrait or a creative conceptual shoot, I invite you to explore the available packages and learn more about the process. </source>
+            <target> Jelenleg is fogadok privát felkéréseket fotózásra. Akár egy hangulatos egyéni portrét, akár egy kreatív, konceptuális fotózást szeretnél, arra invitállak, hogy fedezd fel az elérhető csomagokat, és tudj meg többet a folyamatról. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">49,51</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="1969502992642241592" datatype="html">
+            <source>Explore packages</source>
+            <target>Csomagok felfedezése</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">54,55</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/portfolio/portfolio.html</context>
+            <context context-type="linenumber">25,26</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="4758159348866970206" datatype="html">
+            <source>A selection of my favorite photos</source>
+            <target>Válogatás a kedvenc fotóimból</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/portfolio/portfolio.html</context>
+            <context context-type="linenumber">22,23</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="5265570888305978956" datatype="html">
+            <source>A tailored experience.</source>
+            <target>Személyre szabott élmény.</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">8,9</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="3669658800433632207" datatype="html">
+            <source> Every subject is unique, and so is the process of capturing them. Because I specialize in custom mosaic panoramas, no two sessions are identical. Pricing is bespoke — tailored specifically to your vision, location, and creative needs. </source>
+            <target> Minden alany egyedi, és a megörökítésük folyamata is az. Mivel egyedi mozaik-panorámákra specializálódom, nincs két egyforma fotózás. Az árazás egyedi – kifejezetten az elképzeléseidhez, a helyszínhez és a kreatív igényeidhez igazodik. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">10,12</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="8491367840014179062" datatype="html">
+            <source> The sessions aren&apos;t strictly tied to time, and you are welcome to bring as many outfits as you&apos;d like. </source>
+            <target> A fotózások nincsenek szigorúan időhöz kötve, és bátran hozhatsz magaddal annyi szettet, amennyit csak szeretnél. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">17</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="1229675808708152291" datatype="html">
+            <source> The average session is about 90 minutes and starts roughly an hour before sunset. </source>
+            <target> Egy fotózás átlagosan 90 percet vesz igénybe, és nagyjából egy órával naplemente előtt kezdődik. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">20</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="7083781572150583467" datatype="html">
+            <source>The Blue Hour Session</source>
+            <target>Kék óra fotózás</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">31,32</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="4243509324887733900" datatype="html">
+            <source> Cinematic, moody portraits captured during the fleeting moments of sunset and twilight. Ideal for striking individual conceptual work. </source>
+            <target> Filmszerű, hangulatos portrék a naplemente és a szürkület tünékeny pillanataiban megörökítve. Ideális kifejező, egyéni konceptuális munkákhoz. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">33,34</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="5067183699659086711" datatype="html">
+            <source>Investment begins at $XXX</source>
+            <target>Az árak $XXX összegtől indulnak</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">36,37</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">53,54</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">70,71</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">87,88</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="3575384734520702386" datatype="html">
+            <source>Inquire Now</source>
+            <target>Érdeklődj most</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">37,38</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">54,55</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">71,72</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">88,89</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">123,124</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="6628018540681905489" datatype="html">
+            <source>The Blue Hour Panorama Session</source>
+            <target>Kék óra panoráma fotózás</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">49,50</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="5975249270310070017" datatype="html">
+            <source> Sunset turning into Blue Hour, a vintage f2 lens and a sweeping panorama. Need anything else? </source>
+            <target> Kék órába hajló naplemente, egy klasszikus f/2-es lencse és egy lenyűgöző panoráma. Kell ennél több? </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">51</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="4005459781314219468" datatype="html">
+            <source>Couples &amp; Connection</source>
+            <target>Párok és kapcsolódás</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">66,67</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="2272162329648335281" datatype="html">
+            <source> Intimate portraits of you and your beloved, capturing genuine connection. </source>
+            <target> Intim portrék rólad és a szerelmedről, a köztetek lévő valódi köteléket megörökítve. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">68</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="8798658431902468523" datatype="html">
+            <source>Custom Sessions</source>
+            <target>Egyedi fotózások</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">83,84</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="4553365952567969706" datatype="html">
+            <source> A place and time of your choosing. </source>
+            <target> Az általad választott helyen és időben. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">85</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="7846259963835884844" datatype="html">
+            <source>Specialty Commissions</source>
+            <target>Speciális felkérések</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">103,104</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="2372362987291649435" datatype="html">
+            <source>Automotive</source>
+            <target>Autó / Jármű</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">109,110</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="8756910227198054359" datatype="html">
+            <source>Pets</source>
+            <target>Kisállat</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">113,114</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="7616770651914901276" datatype="html">
+            <source>Product</source>
+            <target>Termék</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">117,118</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="8667920149477423340" datatype="html">
+            <source>Custom pricing based on project scope</source>
+            <target>Egyedi árazás a projekt méretétől függően</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">122,123</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="8213960338309273800" datatype="html">
+            <source>Bespoke Web- and Logo Design</source>
+            <target>Egyedi web- és logótervezés</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">136,137</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="4342908436091947982" datatype="html">
+            <source> Do you like the design of this portfolio and want something similar of your own? Beyond the lens, I craft bespoke, premium websites tailored for creatives and businesses. </source>
+            <target> Tetszik ennek a portfóliónak a megjelenése, és szeretnél valami hasonlót magadnak? A lencsén túl egyedi, prémium weboldalakat készítek alkotók és vállalkozások számára. </target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">138,139</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="7924247663991347730" datatype="html">
+            <source>To learn more, contact me through the button below.</source>
+            <target>Ha többet szeretnél megtudni, keress meg az alábbi gombra kattintva.</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">141,142</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="7860417773042576167" datatype="html">
+            <source>Discuss a Web Project</source>
+            <target>Webes projekt megbeszélése</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/services/services.html</context>
+            <context context-type="linenumber">142,143</context>
+            </context-group>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>

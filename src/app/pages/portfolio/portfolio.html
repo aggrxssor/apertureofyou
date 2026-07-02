@@ -19,13 +19,11 @@
     </ng-template>
 
     <div class="portfolio-heading">
-        <p class="portfolio-kicker">A selection of my favorite photos</p>
-        <h2 id="portfolio-title" class="portfolio-title">Interested?</h2>
+        <p class="portfolio-kicker" i18n>A selection of my favorite photos</p>
+        <h2 id="portfolio-title" class="portfolio-title" i18n>Interested?</h2>
         
-        <a routerLink="/services" class="home-cta">Explore packages</a>
+        <a routerLink="/services" class="home-cta" i18n>Explore packages</a>
     </div>
 </section>
-
-
 
 <app-image-modal [image]="selectedImage" (closeModal)="closeImage()"></app-image-modal>

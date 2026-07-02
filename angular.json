@@ -16,6 +16,12 @@
           "standalone": false
         }
       },
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "hu": "src/locale/messages.hu.xlf"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -33,7 +39,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css", "node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -42,7 +49,10 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
-            }
+            },
+            "polyfills": [
+              "@angular/localize/init"
+            ]
           },
           "configurations": {
             "production": {
@@ -64,6 +74,9 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "hu": {
+              "localize": ["hu"]
             }
           },
           "defaultConfiguration": "production"
@@ -71,6 +84,9 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
+            "hu": {
+              "buildTarget": "apertureofyou:build:hu"
+            },
             "production": {
               "buildTarget": "apertureofyou:build:production"
             },
@@ -95,6 +111,9 @@
             ],
             "styles": [
               "src/styles.css"
+            ],
+            "polyfills": [
+              "@angular/localize/init"
             ]
           }
         }

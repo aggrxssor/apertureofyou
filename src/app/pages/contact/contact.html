@@ -6,18 +6,18 @@
         <div class="contact-options-container">
             
             <article class="contact-card">
-                <p class="section-kicker">Photography</p>
-                <h3 class="contact-card-title">Interested in a session?</h3>
-                <p class="section-text">
+                <p class="section-kicker" i18n>Photography</p>
+                <h3 class="contact-card-title" i18n>Interested in a session?</h3>
+                <p class="section-text" i18n>
                     For private client sessions, conceptual work, and print inquiries.
                 </p>
                 <button (click)="copyEmail('hello@apertureofyou.com')" class="service-cta">hello@apertureofyou.com</button>
             </article>
 
             <article class="contact-card">
-                <p class="section-kicker">Digital Architecture</p>
-                <h3 class="contact-card-title">Discuss a web project</h3>
-                <p class="section-text">
+                <p class="section-kicker" i18n>Digital Architecture</p>
+                <h3 class="contact-card-title" i18n>Discuss a web project</h3>
+                <p class="section-text" i18n>
                     For bespoke portfolio and premium website design inquiries.
                 </p>
                 <button (click)="copyEmail('webdesign@apertureofyou.com')" class="service-cta">webdesign@apertureofyou.com</button>
@@ -27,17 +27,17 @@
 
         <div class="contact-details-footer">
             <div class="info-block">
-                <h3 class="info-kicker">Location</h3>
-                <p class="section-text">
+                <h3 class="info-kicker" i18n>Location</h3>
+                <p class="section-text" i18n>
                     Based in Hungary.<br>
                     Available for private client sessions worldwide.
                 </p>
             </div>
             
             <div class="info-block">
-                <h3 class="info-kicker">Socials</h3>
+                <h3 class="info-kicker" i18n>Socials</h3>
                 <p class="section-text">
-                    <a href="https://www.instagram.com/apertureofyou/" class="contact-link">Instagram</a>
+                    <a href="https://www.instagram.com/apertureofyou/" class="contact-link" i18n>Instagram</a>
                 </p>
             </div>
         </div>
@@ -46,5 +46,5 @@
 </section>
 
 <div class="glass-toast" [class.toast-visible]="showToast">
-    <p class="m-0">Email address copied to clipboard.</p>
+    <p class="m-0" i18n>Email address copied to clipboard.</p>
 </div>

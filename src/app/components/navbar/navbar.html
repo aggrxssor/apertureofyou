@@ -22,34 +22,34 @@
                 <ul class="navbar-nav gap-lg-4 mt-2 align-items-center">
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+                        <a class="nav-link text-uppercase" routerLink="/portfolio" routerLinkActive="active" i18n>Portfolio</a>
                     </li>
 
                     <li class="nav-item dropdown d-flex align-items-center">
-                        <a class="nav-link text-uppercase pe-1" routerLink="/gallery" routerLinkActive="active">Gallery</a>
+                        <a class="nav-link text-uppercase pe-1" routerLink="/gallery" routerLinkActive="active" i18n>Gallery</a>
                         <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;">
-                            <span class="visually-hidden">Toggle Dropdown</span>
+                            <span class="visually-hidden" i18n>Toggle Dropdown</span>
                         </a>
                         <ul class="dropdown-menu m-0">
-                            <li><a class="dropdown-item" routerLink="/gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">All</a></li>
-                            <li><a class="dropdown-item" routerLink="/gallery/czechia" routerLinkActive="active">Czechia</a></li>
-                            <li><a class="dropdown-item" routerLink="/gallery/hungary" routerLinkActive="active">Hungary</a></li>
-                            <li><a class="dropdown-item" routerLink="/gallery/morocco" routerLinkActive="active">Morocco</a></li>
-                            <li><a class="dropdown-item" routerLink="/gallery/slovakia" routerLinkActive="active">Slovakia</a></li>
-                            <li><a class="dropdown-item" routerLink="/gallery/spain" routerLinkActive="active">Spain</a></li>
+                            <li><a class="dropdown-item" routerLink="/gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" i18n>All</a></li>
+                            <li><a class="dropdown-item" routerLink="/gallery/czechia" routerLinkActive="active" i18n>Czechia</a></li>
+                            <li><a class="dropdown-item" routerLink="/gallery/hungary" routerLinkActive="active" i18n>Hungary</a></li>
+                            <li><a class="dropdown-item" routerLink="/gallery/morocco" routerLinkActive="active" i18n>Morocco</a></li>
+                            <li><a class="dropdown-item" routerLink="/gallery/slovakia" routerLinkActive="active" i18n>Slovakia</a></li>
+                            <li><a class="dropdown-item" routerLink="/gallery/spain" routerLinkActive="active" i18n>Spain</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" routerLink="/services" routerLinkActive="active">Services</a>
+                        <a class="nav-link text-uppercase" routerLink="/services" routerLinkActive="active" i18n>Services</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" routerLink="/contact" routerLinkActive="active">Contact</a>
+                        <a class="nav-link text-uppercase" routerLink="/contact" routerLinkActive="active" i18n>Contact</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" routerLink="/about" routerLinkActive="active">About</a>
+                        <a class="nav-link text-uppercase" routerLink="/about" routerLinkActive="active" i18n>About</a>
                     </li>
 
                 </ul>
@@ -80,27 +80,27 @@
 <div class="mobile-slider-knockout" [class.open]="isMobileMenuOpen">
     
     <ul class="slider-links">
-        <li><a routerLink="/portfolio" routerLinkActive="active" (click)="closeMobileMenu()">Portfolio</a></li>
+        <li><a routerLink="/portfolio" routerLinkActive="active" (click)="closeMobileMenu()" i18n>Portfolio</a></li>
         
         <li class="slider-accordion-wrapper">
             <div class="slider-accordion-toggle" (click)="toggleGallery()">
-                <span [class.gallery-active]="isGalleryExpanded">Gallery</span>
+                <span [class.gallery-active]="isGalleryExpanded" i18n>Gallery</span>
                 <span class="accordion-arrow" [class.rotated]="isGalleryExpanded">▼</span>
             </div>
             
             <div class="slider-accordion-content" [class.expanded]="isGalleryExpanded">
-                <a routerLink="/gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">All</a>
-                <a routerLink="/gallery/czechia" routerLinkActive="active" (click)="closeMobileMenu()">Czechia</a>
-                <a routerLink="/gallery/hungary" routerLinkActive="active" (click)="closeMobileMenu()">Hungary</a>
-                <a routerLink="/gallery/morocco" routerLinkActive="active" (click)="closeMobileMenu()">Morocco</a>
-                <a routerLink="/gallery/slovakia" routerLinkActive="active" (click)="closeMobileMenu()">Slovakia</a>
-                <a routerLink="/gallery/spain" routerLinkActive="active" (click)="closeMobileMenu()">Spain</a>
+                <a routerLink="/gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()" i18n>All</a>
+                <a routerLink="/gallery/czechia" routerLinkActive="active" (click)="closeMobileMenu()" i18n>Czechia</a>
+                <a routerLink="/gallery/hungary" routerLinkActive="active" (click)="closeMobileMenu()" i18n>Hungary</a>
+                <a routerLink="/gallery/morocco" routerLinkActive="active" (click)="closeMobileMenu()" i18n>Morocco</a>
+                <a routerLink="/gallery/slovakia" routerLinkActive="active" (click)="closeMobileMenu()" i18n>Slovakia</a>
+                <a routerLink="/gallery/spain" routerLinkActive="active" (click)="closeMobileMenu()" i18n>Spain</a>
             </div>
         </li>
 
-        <li><a routerLink="/services" routerLinkActive="active" (click)="closeMobileMenu()">Services</a></li>
-        <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMobileMenu()">Contact</a></li>
-        <li><a routerLink="/about" routerLinkActive="active" (click)="closeMobileMenu()">About</a></li>
+        <li><a routerLink="/services" routerLinkActive="active" (click)="closeMobileMenu()" i18n>Services</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMobileMenu()" i18n>Contact</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" (click)="closeMobileMenu()" i18n>About</a></li>
     </ul>
 
     <div class="slider-lang-switcher">
