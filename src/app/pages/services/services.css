@@ -231,3 +231,27 @@
     color: #1a1a1a;
     margin: 0;
 }
+
+@media (max-width: 767px) {
+    .hero-section {
+        height: 25vh;
+        width: 100%;
+    }
+
+    .home-section {
+        padding: 1rem 1.5rem;
+    }
+
+    .circle-img-small {
+        min-width: 100px;
+        max-width: 100px;
+    }
+
+    .service-image-wrapper {
+        order: -1; 
+    }
+
+    .circle-img {
+        max-width: 300px;
+    }
+}

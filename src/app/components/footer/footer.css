@@ -1,4 +1,3 @@
-
 .site-footer {
     width: 100%;
     color: white;
@@ -140,4 +139,10 @@
 }
 .mb-5 {
     margin-bottom: 3rem !important;
+}
+
+@media(max-width: 762px) {
+    .footer-top-section {
+    padding: 2rem 0; 
+}
 }

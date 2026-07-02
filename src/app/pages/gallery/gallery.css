@@ -142,14 +142,6 @@
     width: min(420px, 70vw);
 }
 @media (max-width: 767px) {
-    .gallery-page {
-        padding: 4.5rem 1rem;
-    }
-
-    .gallery-heading {
-        margin-bottom: 3rem;
-    }
-
     .grid-wrapper {
         grid-template-columns: 1fr 1fr;
         
@@ -251,4 +243,10 @@
 .clear-filter-btn:hover {
     opacity: 1;
     transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .page-content{
+        padding-top: 2.1rem;
+    }
 }

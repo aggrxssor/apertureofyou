@@ -66,4 +66,10 @@
     .page-content {
         padding-top: 130px;
     }
+}
+
+@media (max-width: 767px) {
+    .page-content{
+        padding-top: 4.1rem;
     }
+}

@@ -4,7 +4,7 @@
         [class.header-hidden]="isHidden" 
         [class.is-absolute]="isAbsolute">
 
-    <div class="container d-flex flex-row flex-lg-column justify-content-between align-items-center pt-4 pb-2">
+    <div class="container d-flex flex-row flex-lg-column justify-content-between align-items-center py-3 pt-lg-4 pb-lg-2">
         
         <h1 class="site-title m-0 mb-lg-4 d-flex align-items-center gap-3" role="button" routerLink="/">
             <img src="assets/hero/apertureofu_b&w.png" alt="Aperture of You Logo" class="nav-logo" />
@@ -73,49 +73,46 @@
     </div>
 </header>
 
-<div class="mobile-slider-overlay" [class.open]="isMobileMenuOpen">
+<div class="mobile-slider-glass-bar" [class.open]="isMobileMenuOpen" (click)="closeMobileMenu()">
+    <span class="slider-close-icon">&gt;</span>
+</div>
+
+<div class="mobile-slider-knockout" [class.open]="isMobileMenuOpen">
     
-    <div class="slider-close-bar" (click)="closeMobileMenu()">
-        <span class="slider-close-icon">&gt;</span>
-    </div>
-
-    <div class="slider-content">
+    <ul class="slider-links">
+        <li><a routerLink="/portfolio" routerLinkActive="active" (click)="closeMobileMenu()">Portfolio</a></li>
         
-        <ul class="slider-links">
-            <li><a routerLink="/portfolio" routerLinkActive="active" (click)="closeMobileMenu()">Portfolio</a></li>
+        <li class="slider-accordion-wrapper">
+            <div class="slider-accordion-toggle" (click)="toggleGallery()">
+                <span [class.gallery-active]="isGalleryExpanded">Gallery</span>
+                <span class="accordion-arrow" [class.rotated]="isGalleryExpanded">▼</span>
+            </div>
             
-            <li class="slider-accordion-wrapper">
-                <div class="slider-accordion-toggle" (click)="toggleGallery()">
-                    <span [class.fw-bold]="isGalleryExpanded">Gallery</span>
-                    <span class="accordion-arrow" [class.rotated]="isGalleryExpanded">▼</span>
-                </div>
-                
-                <div class="slider-accordion-content" [class.expanded]="isGalleryExpanded">
-                    <a routerLink="/gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">All</a>
-                    <a routerLink="/gallery/czechia" routerLinkActive="active" (click)="closeMobileMenu()">Czechia</a>
-                    <a routerLink="/gallery/hungary" routerLinkActive="active" (click)="closeMobileMenu()">Hungary</a>
-                    <a routerLink="/gallery/morocco" routerLinkActive="active" (click)="closeMobileMenu()">Morocco</a>
-                    <a routerLink="/gallery/slovakia" routerLinkActive="active" (click)="closeMobileMenu()">Slovakia</a>
-                    <a routerLink="/gallery/spain" routerLinkActive="active" (click)="closeMobileMenu()">Spain</a>
-                </div>
-            </li>
+            <div class="slider-accordion-content" [class.expanded]="isGalleryExpanded">
+                <a routerLink="/gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">All</a>
+                <a routerLink="/gallery/czechia" routerLinkActive="active" (click)="closeMobileMenu()">Czechia</a>
+                <a routerLink="/gallery/hungary" routerLinkActive="active" (click)="closeMobileMenu()">Hungary</a>
+                <a routerLink="/gallery/morocco" routerLinkActive="active" (click)="closeMobileMenu()">Morocco</a>
+                <a routerLink="/gallery/slovakia" routerLinkActive="active" (click)="closeMobileMenu()">Slovakia</a>
+                <a routerLink="/gallery/spain" routerLinkActive="active" (click)="closeMobileMenu()">Spain</a>
+            </div>
+        </li>
 
-            <li><a routerLink="/services" routerLinkActive="active" (click)="closeMobileMenu()">Services</a></li>
-            <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMobileMenu()">Contact</a></li>
-            <li><a routerLink="/about" routerLinkActive="active" (click)="closeMobileMenu()">About</a></li>
-        </ul>
+        <li><a routerLink="/services" routerLinkActive="active" (click)="closeMobileMenu()">Services</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMobileMenu()">Contact</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" (click)="closeMobileMenu()">About</a></li>
+    </ul>
 
-        <div class="slider-lang-switcher">
-            <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'en'" (click)="switchLanguage('en'); closeMobileMenu()">
-                <img src="assets/flag-for-flag-united-kingdom-svgrepo-com.svg" class="nav-flag-icon" alt="English">
-                EN
-            </button>
-            <span class="nav-lang-divider" style="color: #1a1a1a">|</span>
-            <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'hu'" (click)="switchLanguage('hu'); closeMobileMenu()">
-                <img src="assets/flag-for-flag-hungary-svgrepo-com.svg" class="nav-flag-icon" alt="Hungarian">
-                HU
-            </button>
-        </div>
-
+    <div class="slider-lang-switcher">
+        <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'en'" (click)="switchLanguage('en'); closeMobileMenu()">
+            <img src="assets/flag-for-flag-united-kingdom-svgrepo-com.svg" class="nav-flag-icon" alt="English">
+            EN
+        </button>
+        <span class="nav-lang-divider">|</span>
+        <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'hu'" (click)="switchLanguage('hu'); closeMobileMenu()">
+            <img src="assets/flag-for-flag-hungary-svgrepo-com.svg" class="nav-flag-icon" alt="Hungarian">
+            HU
+        </button>
     </div>
+
 </div>

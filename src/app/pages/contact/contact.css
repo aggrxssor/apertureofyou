@@ -197,3 +197,14 @@
     transform: translate(-50%, 0);
     opacity: 1;
 }
+
+@media (max-width: 767px) {
+    .hero-section {
+        height: 25vh;
+        width: 100%;
+    }
+
+    .contact-section {
+        padding: 3rem 1.5rem;
+    }
+}
