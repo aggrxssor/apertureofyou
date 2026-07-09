@@ -384,7 +384,7 @@
         </trans-unit>
         <trans-unit id="6609768968908748834" datatype="html">
             <source> Welcome to Aperture of You. What began as a simple fascination with the camera over 15 years ago has evolved into a dedicated pursuit of portrait photography. Rather than simply taking photographs, I create portraits that capture personality, presence, and character through a distinctive photographic process.</source>
-            <target> Üdvözöllek az Aperture of You oldalon. Ami több mint 15 évvel ezelőtt a kamera iránti puszta kíváncsisággal kezdődött, mára a portréfotózás iránti elhivatott törekvéssé nőtte ki magát. Ahelyett, hogy egyszerűen csak képeket készítenék, egyedi fotográfiai folyamatom révén olyan portrékat alkotok, amelyek visszaadják a személyiséget, a jelenlétet és a karaktert.</target>
+            <target> Üdvözöllek az Aperture of You oldalán. Ami több mint 15 évvel ezelőtt a kamera iránti puszta kíváncsisággal kezdődött, mára a portréfotózás iránti elhivatott törekvéssé nőtte ki magát. Ahelyett, hogy egyszerűen csak képeket készítenék, egyedi fotográfiai folyamatom révén olyan portrékat alkotok, amelyek visszaadják a személyiséget, a jelenlétet és a karaktert.</target>
             <context-group purpose="location">
             <context context-type="sourcefile">src/app/pages/home/home.html</context>
             <context context-type="linenumber">10,12</context>
