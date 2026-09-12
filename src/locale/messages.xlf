@@ -35,7 +35,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">87,88</context>
+          <context context-type="linenumber">90,91</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7143579180750436311" datatype="html">
@@ -46,11 +46,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">44,45</context>
+          <context context-type="linenumber">47,48</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">105,106</context>
+          <context context-type="linenumber">110,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1726363342938046830" datatype="html">
@@ -61,11 +61,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">52,53</context>
+          <context context-type="linenumber">55,56</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">107,108</context>
+          <context context-type="linenumber">112,113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="813263746069473514" datatype="html">
@@ -111,7 +111,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">91,92</context>
+          <context context-type="linenumber">94,95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6783110936904214939" datatype="html">
@@ -129,73 +129,95 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">97</context>
+          <context context-type="linenumber">100</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5322511247093866962" datatype="html">
-        <source>Czechia</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">35,36</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">97,98</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="67794167649611006" datatype="html">
-        <source>Hungary</source>
+      <trans-unit id="21641575311466062" datatype="html">
+        <source>Austria</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
           <context context-type="linenumber">36,37</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">98,99</context>
+          <context context-type="linenumber">100,101</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2141197120629300851" datatype="html">
-        <source>Morocco</source>
+      <trans-unit id="6839230987909572003" datatype="html">
+        <source>Croatia</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
           <context context-type="linenumber">37,38</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">99,100</context>
+          <context context-type="linenumber">101,102</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1331379005917484978" datatype="html">
-        <source>Slovakia</source>
+      <trans-unit id="5322511247093866962" datatype="html">
+        <source>Czechia</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
           <context context-type="linenumber">38,39</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">100,101</context>
+          <context context-type="linenumber">102,103</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3847673789207378086" datatype="html">
-        <source>Spain</source>
+      <trans-unit id="67794167649611006" datatype="html">
+        <source>Hungary</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
           <context context-type="linenumber">39,40</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">101,102</context>
+          <context context-type="linenumber">103,104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2141197120629300851" datatype="html">
+        <source>Morocco</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+          <context context-type="linenumber">104,105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1331379005917484978" datatype="html">
+        <source>Slovakia</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+          <context context-type="linenumber">105,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3847673789207378086" datatype="html">
+        <source>Spain</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+          <context context-type="linenumber">106,107</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7922989125096435449" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">48,49</context>
+          <context context-type="linenumber">51,52</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
-          <context context-type="linenumber">106,107</context>
+          <context context-type="linenumber">111,112</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1511369318875371807" datatype="html">
@@ -325,7 +347,7 @@
         <source>No photographs found for this location.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/gallery/gallery.html</context>
-          <context context-type="linenumber">43,44</context>
+          <context context-type="linenumber">48,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3318892826595981501" datatype="html">
@@ -391,40 +413,47 @@
           <context context-type="linenumber">38,40</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="3478579554263614884" datatype="html">
+        <source>Explore portfolio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="5760214615970998269" datatype="html">
         <source>Interested?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.html</context>
-          <context context-type="linenumber">47,48</context>
+          <context context-type="linenumber">50,51</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/portfolio.html</context>
-          <context context-type="linenumber">23,24</context>
+          <context context-type="linenumber">31,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="925721456857320173" datatype="html">
         <source> I am currently accepting private client sessions. Whether you are looking for a moody individual portrait or a creative conceptual shoot, I invite you to explore the available packages and learn more about the process. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.html</context>
-          <context context-type="linenumber">49,51</context>
+          <context context-type="linenumber">52,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1969502992642241592" datatype="html">
         <source>Explore packages</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.html</context>
-          <context context-type="linenumber">54,55</context>
+          <context context-type="linenumber">57,58</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/portfolio.html</context>
-          <context context-type="linenumber">25,26</context>
+          <context context-type="linenumber">33,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4758159348866970206" datatype="html">
         <source>A selection of my favorite photos</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/portfolio/portfolio.html</context>
-          <context context-type="linenumber">22,23</context>
+          <context context-type="linenumber">30,31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5265570888305978956" datatype="html">

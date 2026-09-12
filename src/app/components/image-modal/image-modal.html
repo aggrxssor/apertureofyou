@@ -11,7 +11,14 @@
             &times;
         </button>
 
-        <img class="image-modal-img" [src]="image.midSizedUrl" [alt]="image.alt" />
+        <img 
+            class="image-modal-img" 
+            [src]="image.midSizedUrl" 
+            [attr.srcset]="image.thumbnailUrl + ' 600w, ' + image.midSizedUrl + ' 1200w'"
+            sizes="100vw"
+            fetchpriority="high"
+            [alt]="image.alt" 
+        />
 
         <p *ngIf="image.title" class="image-modal-title">{{ image.title }}</p>
 
@@ -19,6 +26,4 @@
             {{ image.resolution }} <span *ngIf="image.resolution">&nbsp;&bull;&nbsp; {{ image.size }}</span>
         </div>
     </div>
-
-    
 </div>

@@ -15,7 +15,7 @@ export class Gallery implements OnInit {
   filteredImages: SiteImage[] = [];
   activeCountry: string | null = null;
   
-  countries: string[] = ['Czechia', 'Hungary', 'Morocco', 'Slovakia', 'Spain'];
+  countries: string[] = ['Austria','Croatia','Czechia', 'Hungary', 'Morocco', 'Slovakia', 'Spain'];
 
   constructor(
       private readonly imageService: ImageService, 

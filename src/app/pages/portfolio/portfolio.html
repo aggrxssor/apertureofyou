@@ -3,12 +3,17 @@
     <ng-container *ngIf="images.length; else emptyPortfolio">
         <div *ngIf="!devMode" class="grid-wrapper">
             <button
-                *ngFor="let image of images"
+                *ngFor="let image of images; let i = index"
                 class="grid-item"
                 [ngClass]="image.orientation"
                 type="button"
                 (click)="openImage(image)">
-                <img [src]="image.thumbnailUrl" [alt]="image.alt" loading="lazy" />
+                <img 
+                    [src]="image.thumbnailUrl" 
+                    [alt]="image.alt" 
+                    [loading]="i < 20 ? 'eager' : 'lazy'"
+                    [attr.fetchpriority]="i < 4 ? 'high' : 'auto'"
+                />
             </button>
         </div>
 
