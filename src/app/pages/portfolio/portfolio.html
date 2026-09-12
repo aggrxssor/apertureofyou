@@ -1,16 +1,19 @@
 <section class="portfolio-page" aria-labelledby="portfolio-title">
     
+    <ng-container *ngIf="images.length; else emptyPortfolio">
+        <div *ngIf="!devMode" class="grid-wrapper">
+            <button
+                *ngFor="let image of images"
+                class="grid-item"
+                [ngClass]="image.orientation"
+                type="button"
+                (click)="openImage(image)">
+                <img [src]="image.thumbnailUrl" [alt]="image.alt" loading="lazy" />
+            </button>
+        </div>
 
-    <div *ngIf="images.length; else emptyPortfolio" class="grid-wrapper">
-        <button
-            *ngFor="let image of images"
-            class="grid-item"
-            [ngClass]="image.orientation"
-            type="button"
-            (click)="openImage(image)">
-            <img [src]="image.thumbnailUrl" [alt]="image.alt" loading="lazy" />
-        </button>
-    </div>
+        <app-grid-sorter *ngIf="devMode" [images]="images"></app-grid-sorter>
+    </ng-container>
 
     <ng-template #emptyPortfolio>
         <div class="portfolio-empty">

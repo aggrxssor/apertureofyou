@@ -439,6 +439,7 @@
             <context context-type="linenumber">38,40</context>
             </context-group>
         </trans-unit>
+        
         <trans-unit id="5760214615970998269" datatype="html">
             <source>Interested?</source>
             <target>Felkeltette az érdeklődésed?</target>
@@ -462,6 +463,18 @@
         <trans-unit id="1969502992642241592" datatype="html">
             <source>Explore packages</source>
             <target>Csomagok felfedezése</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">54,55</context>
+            </context-group>
+            <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/portfolio/portfolio.html</context>
+            <context context-type="linenumber">25,26</context>
+            </context-group>
+        </trans-unit>
+                <trans-unit id="3478579554263614884" datatype="html">
+            <source>Explore portfolio</source>
+            <target>Portfólió felfedezése</target>
             <context-group purpose="location">
             <context context-type="sourcefile">src/app/pages/home/home.html</context>
             <context context-type="linenumber">54,55</context>

@@ -1,1 +1,81 @@
-<p>grid-sorter works!</p>
+<div class="dev-toolbar">
+    <button type="button" class="dev-btn export-btn" (click)="exportCleanArray()">
+        📋 Export Placed Array
+    </button>
+    <button type="button" class="dev-btn load-btn" (click)="loadSavedLayout()">
+        🔄 Load Saved Layout
+    </button>
+    <span class="dev-status">Drag from Inventory down to the Grid</span>
+</div>
+
+<div cdkDropListGroup class="sorter-group-container">
+
+<div class="inventory-box"
+        id="inventoryList"
+        cdkDropList
+        [cdkDropListData]="inventoryImages"
+        [cdkDropListConnectedTo]="['gridBoardList']"
+        (cdkDropListDropped)="onDropIntoInventory($event)">
+        
+        <div *ngIf="inventoryImages.length === 0" class="inventory-empty">
+            Inventory Empty. All images placed!
+        </div>
+
+    <div *ngFor="let img of inventoryImages; trackBy: trackById; let i = index"
+            cdkDrag
+            [cdkDragData]="{ image: img, origin: 'inventory', index: i }"
+            (cdkDragMoved)="onDragMoved($event)"
+            (cdkDragEnded)="onDragEnded($event)"
+            class="inventory-item">
+            
+            <img *cdkDragPreview [src]="img.thumbnailUrl" class="aiming-preview" />
+            <img [src]="img.thumbnailUrl" loading="lazy" />
+            <div class="inv-badge">{{ img.orientation | slice:0:1 | uppercase }}</div>
+        </div>
+    </div>
+
+    <div class="grid-board-container"
+        id="gridBoardList"
+        #gridBoardRef
+        cdkDropList
+        [cdkDropListData]="gridImages"
+        [cdkDropListConnectedTo]="['inventoryList']"
+        [cdkDropListSortingDisabled]="true"
+        (cdkDropListDropped)="onDropIntoGrid($event)">
+        
+        <div class="bg-layer">
+            <div *ngFor="let cell of bgCells" class="bg-cell"></div>
+        </div>
+
+        <div *ngIf="preview" 
+            class="ghost-preview"
+            [ngClass]="{ 'valid-drop': previewValid, 'invalid-drop': !previewValid }"
+            [style.grid-column]="preview.col + ' / span ' + preview.colSpan"
+            [style.grid-row]="preview.row + ' / span ' + preview.rowSpan">
+        </div>
+
+        <div *ngFor="let img of gridImages; trackBy: trackById; let i = index"
+            cdkDrag
+            [cdkDragData]="{ image: img, origin: 'grid', index: i }"
+            (cdkDragMoved)="onDragMoved($event)"
+            (cdkDragEnded)="onDragEnded($event)"
+            class="grid-item"
+            [ngClass]="img.orientation"
+            [style.grid-column]="img.col + ' / span ' + img.colSpan"
+            [style.grid-row]="img.row + ' / span ' + img.rowSpan">
+            
+            <div *cdkDragPlaceholder 
+                [style.grid-column]="img.col + ' / span ' + img.colSpan"
+                [style.grid-row]="img.row + ' / span ' + img.rowSpan">
+            </div>
+            
+            <img *cdkDragPreview [src]="img.thumbnailUrl" class="aiming-preview" />
+            
+            <div class="dev-index-badge">
+                <span class="badge-coords">R{{ img.row }}:C{{ img.col }}</span>
+            </div>
+            
+            <img [src]="img.thumbnailUrl" [alt]="img.alt" loading="lazy" />
+        </div>
+    </div>
+</div>
