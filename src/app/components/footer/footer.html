@@ -30,14 +30,14 @@
                     <h4 class="footer-heading" i18n>Language</h4>
                     <div class="language-switcher">
                         
-                        <button type="button" class="lang-btn active" (click)="switchLanguage('en')">
+                        <button type="button" class="lang-btn" [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">
                             <img src="assets/flag-for-flag-united-kingdom-svgrepo-com.svg" class="colored-footer-icon" alt="English">
                             EN
                         </button>
-                        
+                                                
                         <span class="lang-divider">|</span>
-                        
-                        <button type="button" class="lang-btn" (click)="switchLanguage('hu')">
+                                                
+                        <button type="button" class="lang-btn" [class.active]="currentLang === 'hu'" (click)="switchLanguage('hu')">
                             <img src="assets/flag-for-flag-hungary-svgrepo-com.svg" class="colored-footer-icon" alt="Hungarian">
                             HU
                         </button>

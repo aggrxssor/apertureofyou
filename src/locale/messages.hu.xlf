@@ -92,15 +92,16 @@
         </trans-unit>
         <trans-unit id="6239312552241298451" datatype="html">
             <source> Aperture of You is located in Budapest, Hungary. | <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot; class=&quot;legal-link&quot;&gt;"/>Contact<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-            <target> Az Aperture of You székhelye Budapesten, Magyarországon található. | <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot; class=&quot;legal-link&quot;&gt;"/>Kapcsolat<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+            <target> Aperture of You is located in Budapest, Hungary. | <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/contact&quot; class=&quot;legal-link&quot;&gt;"/>Kapcsolat<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
             <context-group purpose="location">
             <context context-type="sourcefile">src/app/components/footer/footer.html</context>
             <context context-type="linenumber">56,57</context>
             </context-group>
         </trans-unit>
+        
         <trans-unit id="685897384153303371" datatype="html">
             <source> All images, text and website design © Aperture of You 2026. </source>
-            <target> Minden kép, szöveg és weboldal-design © Aperture of You 2026. </target>
+            <target> All images, text and website design © Aperture of You 2026. </target>
             <context-group purpose="location">
             <context context-type="sourcefile">src/app/components/footer/footer.html</context>
             <context context-type="linenumber">59</context>
@@ -108,7 +109,7 @@
         </trans-unit>
         <trans-unit id="9114785364961053541" datatype="html">
             <source> Please note that this website is monitored and unauthorised reproduction is prohibited. Offenders will face legal action. </source>
-            <target> Felhívjuk figyelmét, hogy a weboldal tartalmát monitorozzuk, és a jogosulatlan felhasználás vagy másolás tilos. A jogsértők jogi lépésekre számíthatnak. </target>
+            <target> Please note that this website is monitored and unauthorised reproduction is prohibited. Offenders will face legal action. </target>
             <context-group purpose="location">
             <context context-type="sourcefile">src/app/components/footer/footer.html</context>
             <context context-type="linenumber">62</context>
@@ -382,12 +383,20 @@
             <context context-type="linenumber">7,9</context>
             </context-group>
         </trans-unit>
-        <trans-unit id="6609768968908748834" datatype="html">
-            <source> Welcome to Aperture of You. What began as a simple fascination with the camera over 15 years ago has evolved into a dedicated pursuit of portrait photography. Rather than simply taking photographs, I create portraits that capture personality, presence, and character through a distinctive photographic process.</source>
-            <target> Üdvözöllek az Aperture of You oldalán. Ami több mint 15 évvel ezelőtt a kamera iránti puszta kíváncsisággal kezdődött, mára a portréfotózás iránti elhivatott törekvéssé nőtte ki magát. Ahelyett, hogy egyszerűen csak képeket készítenék, egyedi fotográfiai folyamatom révén olyan portrékat alkotok, amelyek visszaadják a személyiséget, a jelenlétet és a karaktert.</target>
-            <context-group purpose="location">
+        <trans-unit id="4267819578535835285" datatype="html">
+        <source>Welcome to Aperture of You.</source>
+        <target>Üdvözöllek az Aperture of You oldalán.</target>
+        <context-group purpose="location">
             <context context-type="sourcefile">src/app/pages/home/home.html</context>
-            <context context-type="linenumber">10,12</context>
+            <context context-type="linenumber">8,10</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="4511382357364783691" datatype="html">
+        <source> What began as a simple fascination with the camera over 15 years ago has evolved into a dedicated pursuit of portrait photography. Rather than simply taking photographs, I create portraits that capture personality, presence, and character through a distinctive photographic process.</source>
+        <target> Ami több mint 15 évvel ezelőtt a kamera iránti puszta kíváncsisággal kezdődött, mára a portréfotózás iránti elhivatott törekvéssé nőtte ki magát. Ahelyett, hogy egyszerűen csak képeket készítenék, egyedi fotográfiai folyamatom révén olyan portrékat alkotok, amelyek visszaadják a személyiséget, a jelenlétet és a karaktert.</target>
+        <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/home/home.html</context>
+            <context context-type="linenumber">11,12</context>
             </context-group>
         </trans-unit>
         <trans-unit id="496748652963346100" datatype="html">

@@ -18,14 +18,15 @@ export class Navbar implements OnInit {
     isGalleryExpanded = false;
 
     currentHeaderClass: string | null = null;
-    currentLang: string = 'en';
-
+    currentLang: string = (typeof window !== 'undefined' && window.location.pathname.startsWith('/hu')) ? 'hu' : 'en';  
     constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
     switchLanguage(lang: string) {
-        this.currentLang = lang;
-        console.log(`Language switched to: ${lang}`);
-        
+        if (typeof window !== 'undefined') {sessionStorage.setItem('scrollPos', window.scrollY.toString());
+
+            const currentPath = window.location.pathname.replace(/^\/(en|hu)/, '');
+            window.location.href = `/${lang}${currentPath}`;
+        }
     }
 
     ngOnInit() {

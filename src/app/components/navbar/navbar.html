@@ -56,15 +56,19 @@
 
                 <div class="nav-lang-wrapper mt-4 mt-lg-0">
                     <div class="nav-lang-switcher">
-                        <button type="button" class="nav-lang-btn active" (click)="switchLanguage('en')">
+
+                        <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">
                             <img src="assets/flag-for-flag-united-kingdom-svgrepo-com.svg" class="nav-flag-icon" alt="English">
                             EN
                         </button>
+
                         <span class="nav-lang-divider">|</span>
-                        <button type="button" class="nav-lang-btn" (click)="switchLanguage('hu')">
+
+                        <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'hu'" (click)="switchLanguage('hu')">
                             <img src="assets/flag-for-flag-hungary-svgrepo-com.svg" class="nav-flag-icon" alt="Hungarian">
                             HU
                         </button>
+
                     </div>
                 </div>
 
@@ -104,15 +108,19 @@
     </ul>
 
     <div class="slider-lang-switcher">
-        <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'en'" (click)="switchLanguage('en'); closeMobileMenu()">
+
+        <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">
             <img src="assets/flag-for-flag-united-kingdom-svgrepo-com.svg" class="nav-flag-icon" alt="English">
             EN
         </button>
+
         <span class="nav-lang-divider">|</span>
+
         <button type="button" class="nav-lang-btn" [class.active]="currentLang === 'hu'" (click)="switchLanguage('hu'); closeMobileMenu()">
             <img src="assets/flag-for-flag-hungary-svgrepo-com.svg" class="nav-flag-icon" alt="Hungarian">
             HU
         </button>
+
     </div>
 
 </div>

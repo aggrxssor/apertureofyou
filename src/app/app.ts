@@ -1,5 +1,4 @@
-import { Component, signal, HostListener } from '@angular/core';
-
+import { Component, signal, HostListener, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +6,23 @@ import { Component, signal, HostListener } from '@angular/core';
   standalone: false,
   styleUrl: './app.css'
 })
-export class App {
+export class App implements AfterViewInit {
   protected readonly title = signal('apertureofyou');
 
   showScrollTop = false;
+
+  ngAfterViewInit() {
+    if (typeof window !== 'undefined') {
+      const savedScroll = sessionStorage.getItem('scrollPos');
+      
+      if (savedScroll) {
+        setTimeout(() => {
+          window.scrollTo({ top: parseInt(savedScroll, 10), behavior: 'instant' });
+          sessionStorage.removeItem('scrollPos'); 
+        }, 50);
+      }
+    }
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

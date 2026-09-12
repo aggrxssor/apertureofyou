@@ -8,7 +8,7 @@
 .about-hero {
     height: 70vh;
     width: 100%;
-    background-image:url('/assets/hero/about_hero.jpg'); 
+    background-image:url('../../../assets/hero/about_hero.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

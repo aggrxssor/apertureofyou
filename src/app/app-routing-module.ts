@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: "gallery", component: Gallery, data: {headerTheme: 'dark-header'}, title: 'Gallery | Aperture of You' },
   { path: 'gallery/:country', component: Gallery, data: {headerTheme: 'dark-header'}, title: 'Gallery | Aperture of You' },
   { path: "portfolio", component: Portfolio, title: 'Portfolio | Aperture of You' },
-  { path: "services", component: Services, data: {headerTheme: 'dark-header'}, title: 'Services | Aperture of You' },
-  { path: "about", component: About, title: 'About | Aperture of You' },
+  { path: "services", component: Services, title: 'Services | Aperture of You' },
+  { path: "about", component: About, data: {headerTheme: 'dark-header'}, title: 'About | Aperture of You' },
   { path: "**", redirectTo: "", pathMatch: "full" }
 ];
 

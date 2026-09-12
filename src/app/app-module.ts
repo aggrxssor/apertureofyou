@@ -14,6 +14,7 @@ import { Gallery } from './pages/gallery/gallery';
 import { Home } from './pages/home/home';
 import { Portfolio } from './pages/portfolio/portfolio';
 import { Services } from './pages/services/services';
+import { GridSorter } from './components/grid-sorter/grid-sorter';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { Services } from './pages/services/services';
     Gallery,
     Home,
     Portfolio,
-    Services
+    Services,
+    GridSorter
   ],
   imports: [
     BrowserModule,

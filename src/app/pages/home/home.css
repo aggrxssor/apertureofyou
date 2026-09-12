@@ -3,7 +3,7 @@
     width: 100%;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.18)),
-        url('/assets/hero/hightatras_w_Mira_summer_2025_3_smaller2.jpg');
+        url('../../../assets/hero/hightatras_w_Mira_summer_2025_3_smaller2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
