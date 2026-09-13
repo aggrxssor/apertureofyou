@@ -48,7 +48,7 @@
             "outputMode": "static",
             "polyfills": [
               "@angular/localize/init"
-            ],
+            ]
           },
           "configurations": {
             "production": {
