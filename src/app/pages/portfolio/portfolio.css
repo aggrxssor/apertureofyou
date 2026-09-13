@@ -182,3 +182,17 @@
         grid-row: span 1;
     }
 }
+
+@media (min-aspect-ratio: 18/9) {
+    .portfolio-page {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+}
+
+@media (min-aspect-ratio: 21/9) {
+    .portfolio-page {
+        padding-left: 13vw;
+        padding-right: 13vw;
+    }
+}

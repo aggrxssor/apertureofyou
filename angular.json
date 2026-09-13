@@ -49,7 +49,6 @@
             "polyfills": [
               "@angular/localize/init"
             ],
-            "baseHref": "/" 
           },
           "configurations": {
             "production": {

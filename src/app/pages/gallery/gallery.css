@@ -250,3 +250,17 @@
         padding-top: 2.1rem;
     }
 }
+
+@media (min-aspect-ratio: 18/9) {
+    .gallery-page{
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+}
+
+@media (min-aspect-ratio: 21/9) {
+    .gallery-page{
+        padding-left: 13vw;
+        padding-right: 13vw;
+    }
+}
