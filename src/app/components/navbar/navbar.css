@@ -1,23 +1,69 @@
-.glass{
-    background-color: rgba(26,26,26,0.35);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    border: 1px solid rgba(255, 255, 255, 0.155);
-    border-radius: 2px;
-    opacity: 1;
+.site-header, .is-absolute {
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
 }
 
-.glass::after {
+.site-header::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -2;
+    pointer-events: none;
+    
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    
+    transition: background-color 0.5s ease-out, 
+                backdrop-filter 0.5s ease-out, 
+                -webkit-backdrop-filter 0.5s ease-out,
+                border 0.5s ease-out;
+}
+
+.site-header::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    
     background-image: url('../../../assets/noise.svg');
     background-size: 50px 50px;
-    opacity: 0.3;
+    opacity: 0;
     border-radius: 2px;
+    
+    transition: opacity 0.5s ease-out;
+}
+
+.site-header.glass::before {
+    background-color: rgba(26, 26, 26, 0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.155);
+}
+
+.site-header.glass::after {
+    opacity: 0.3;
+}
+
+.glass::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    
+    background-color: rgba(26, 26, 26, 0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.155);
+    
+    z-index: -2;
     pointer-events: none;
 }
+
 
 .nav-logo {
     height: 1.3em;
@@ -287,6 +333,21 @@
     font-weight: 300;
 }
 
+.mobile-slider-blur-bg {
+    position: fixed;
+    top: 0;
+    left: 65px; 
+    width: calc(100vw - 65px);
+    height: 100dvh;
+    z-index: 2000; 
+    
+    backdrop-filter: blur(15px) brightness(0.6);
+    -webkit-backdrop-filter: blur(15px) brightness(0.6);
+    
+    transform: translateX(100vw);
+    transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
 .mobile-slider-knockout {
     position: fixed;
     top: 0;
@@ -298,9 +359,6 @@
     background-color: white;
     mix-blend-mode: screen; 
     
-    backdrop-filter: blur(15px) brightness(0.6);
-    -webkit-backdrop-filter: blur(15px) brightness(0.6);
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -309,6 +367,12 @@
     
     transform: translateX(100vw);
     transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.mobile-slider-glass-bar.open,
+.mobile-slider-blur-bg.open,
+.mobile-slider-knockout.open {
+    transform: translateX(0);
 }
 
 .mobile-slider-glass-bar.open,
