@@ -11,7 +11,7 @@ export class Portfolio {
   readonly images: SiteImage[];
   selectedImage: SiteImage | null = null;
   
-  devMode: boolean = false;
+  devMode: boolean = true;
 
   constructor(private readonly imageService: ImageService) {
     this.images = this.imageService.getPortfolioImages();
