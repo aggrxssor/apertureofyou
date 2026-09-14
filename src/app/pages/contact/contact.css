@@ -207,4 +207,15 @@
     .contact-section {
         padding: 3rem 1.5rem;
     }
+
+    .contact-card {
+        padding: 3rem 1rem; 
+    }
+
+    .service-cta {
+        padding: 0.8rem 1rem; 
+        max-width: 100%; 
+        word-break: break-word; 
+        white-space: normal;
+    }
 }

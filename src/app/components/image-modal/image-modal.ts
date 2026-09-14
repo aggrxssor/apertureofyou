@@ -12,11 +12,14 @@ export class ImageModal implements OnChanges, OnDestroy {
   @Output() closeModal = new EventEmitter<void>();
 
   private pushedState = false;
+  private scrollPosition = 0;
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['image'] && this.image) {
       if (typeof window !== 'undefined' && !this.pushedState) {
-        window.history.pushState({ modalOpen: true }, '', window.location.href);
+        this.scrollPosition = window.scrollY;
+        
+        window.history.pushState(window.history.state, '', window.location.href);
         this.pushedState = true;
       }
     }
@@ -27,6 +30,7 @@ export class ImageModal implements OnChanges, OnDestroy {
     if (this.pushedState) {
       this.pushedState = false;
       this.closeModal.emit();
+      this.restoreScroll();
     }
   }
 
@@ -42,6 +46,7 @@ export class ImageModal implements OnChanges, OnDestroy {
       this.pushedState = false;
       if (typeof window !== 'undefined') {
         window.history.back();
+        this.restoreScroll();
       }
     }
     this.closeModal.emit();
@@ -50,6 +55,14 @@ export class ImageModal implements OnChanges, OnDestroy {
   ngOnDestroy(): void {
     if (this.pushedState && typeof window !== 'undefined') {
       window.history.back();
+    }
+  }
+
+  private restoreScroll(): void {
+    if (typeof window !== 'undefined') {
+      setTimeout(() => {
+        window.scrollTo(0, this.scrollPosition);
+      }, 10);
     }
   }
 }
