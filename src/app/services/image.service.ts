@@ -30,11 +30,11 @@ export class ImageService {
         location: 'morocco'
       },
       {
-        id: 'morocco2',
+        id: 'morocco6',
         title: '',
-        alt: 'morocco2',
-        thumbnailUrl: 'assets/thumbnails/portfolio/morocco2.jpg',
-        midSizedUrl: 'assets/mid-sized/portfolio/morocco2.jpg',
+        alt: 'morocco6',
+        thumbnailUrl: 'assets/thumbnails/portfolio/morocco6.jpg',
+        midSizedUrl: 'assets/mid-sized/portfolio/morocco6.jpg',
         orientation: 'portrait',
         location: 'morocco'
       },
@@ -84,11 +84,11 @@ export class ImageService {
         location: 'hungary'
       },
       {
-        id: 'morocco6',
+        id: 'morocco2',
         title: '',
-        alt: 'morocco6',
-        thumbnailUrl: 'assets/thumbnails/portfolio/morocco6.jpg',
-        midSizedUrl: 'assets/mid-sized/portfolio/morocco6.jpg',
+        alt: 'morocco2',
+        thumbnailUrl: 'assets/thumbnails/portfolio/morocco2.jpg',
+        midSizedUrl: 'assets/mid-sized/portfolio/morocco2.jpg',
         orientation: 'portrait',
         location: 'morocco'
       },
