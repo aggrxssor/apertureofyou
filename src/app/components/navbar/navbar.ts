@@ -24,6 +24,7 @@ export class Navbar implements OnInit {
     private touchStartY = 0;
     private touchEndX = 0;
     private touchEndY = 0;
+    private isMultiTouch = false;
 
     constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
@@ -81,12 +82,20 @@ export class Navbar implements OnInit {
 
     @HostListener('window:touchstart', ['$event'])
     onTouchStart(event: TouchEvent) {
+        if (event.touches.length > 1) {
+            this.isMultiTouch = true;
+            return;
+        }
+        this.isMultiTouch = false;
         this.touchStartX = event.changedTouches[0].screenX;
         this.touchStartY = event.changedTouches[0].screenY;
     }
 
     @HostListener('window:touchend', ['$event'])
     onTouchEnd(event: TouchEvent) {
+        if (this.isMultiTouch) {
+            return;
+        }
         this.touchEndX = event.changedTouches[0].screenX;
         this.touchEndY = event.changedTouches[0].screenY;
         this.handleSwipe();

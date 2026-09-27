@@ -1,6 +1,7 @@
 <div
     *ngIf="image"
     class="image-modal-backdrop"
+    [class.closing]="isClosing"
     role="dialog"
     aria-modal="true"
     [attr.aria-label]="image.alt"
@@ -8,7 +9,7 @@
 >
     <div class="image-modal-frame" (click)="$event.stopPropagation()">
         <button class="image-modal-close" type="button" aria-label="Close image" (click)="close()">
-            &times;
+            <span class="close-icon">&times;</span>
         </button>
 
         <img 
