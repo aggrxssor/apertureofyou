@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Main -->
+    <url>
+        <loc>https://apertureofyou.com/en/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/</loc>
+    </url>
+
+<!-- Portfolio -->
+    <url>
+        <loc>https://apertureofyou.com/en/portfolio/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/portfolio/</loc>
+    </url>
+
+<!-- Gallery main -->
+    <url>
+        <loc>https://apertureofyou.com/en/gallery/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/gallery/</loc>
+    </url>
+
+<!-- Services -->
+    <url>
+        <loc>https://apertureofyou.com/en/services/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/services/</loc>
+    </url>
+
+<!-- Contact -->
+    <url>
+        <loc>https://apertureofyou.com/en/contact/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/contact/</loc>
+    </url>
+    
+<!-- About -->
+    <url>
+        <loc>https://apertureofyou.com/en/about/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/about/</loc>
+    </url>
+
+<!-- Gallery submenus-->
+    <url>
+        <loc>https://apertureofyou.com/en/gallery/austria/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/gallery/austria/</loc>
+    </url>
+
+    <url>
+        <loc>https://apertureofyou.com/en/gallery/croatia/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/gallery/croatia/</loc>
+    </url>
+
+    <url>
+        <loc>https://apertureofyou.com/en/gallery/czechia/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/gallery/czechia/</loc>
+    </url>
+
+    <url>
+        <loc>https://apertureofyou.com/en/gallery/hungary/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/gallery/hungary/</loc>
+    </url>
+
+    <url>
+        <loc>https://apertureofyou.com/en/gallery/morocco/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/gallery/morocco/</loc>
+    </url>
+
+    <url>
+        <loc>https://apertureofyou.com/en/gallery/slovakia/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/gallery/slovakia/</loc>
+    </url>
+
+    <url>
+        <loc>https://apertureofyou.com/en/gallery/spain/</loc>
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/hu/gallery/spain/</loc>
+    </url>
+
+</urlset>
