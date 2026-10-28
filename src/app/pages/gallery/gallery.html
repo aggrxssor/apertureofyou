@@ -6,13 +6,13 @@
         </div>
         
         <div class="gallery-kicker-container" *ngIf="activeCountry">
-            <span class="gallery-kicker active-label">{{ activeCountry }}</span>
+            <span class="gallery-kicker active-label">{{ activeCountryLabel }}</span>
         </div>
 
         <div class="gallery-kicker-container" *ngIf="!activeCountry">
             <ng-container *ngFor="let country of countries; let isLast = last">
                 <button class="country-link" (click)="selectCountry(country)">
-                    {{ country }}
+                    {{ getCountryLabel(country) }}
                 </button>
                 <span class="country-separator" *ngIf="!isLast"> | </span>
             </ng-container>

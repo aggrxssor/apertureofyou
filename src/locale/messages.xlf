@@ -165,6 +165,17 @@
           <context context-type="linenumber">102,103</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="galleryCountryGreece" datatype="html">
+        <source>Greece</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="67794167649611006" datatype="html">
         <source>Hungary</source>
         <context-group purpose="location">
