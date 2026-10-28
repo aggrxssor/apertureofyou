@@ -1,101 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://sitemaps.org" xmlns:xhtml="http://w3.org">
+
 <!-- Main -->
     <url>
-        <loc>https://apertureofyou.com/en/</loc>
+        <loc>https://apertureofyou.com</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com" />
     </url>
     <url>
-        <loc>https://apertureofyou.com/hu/</loc>
+        <loc>https://apertureofyou.com</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com" />
     </url>
 
 <!-- Portfolio -->
     <url>
-        <loc>https://apertureofyou.com/en/portfolio/</loc>
+        <loc>https://apertureofyou.com/portfolio</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/portfolio" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/portfolio" />
     </url>
     <url>
-        <loc>https://apertureofyou.com/hu/portfolio/</loc>
+        <loc>https://apertureofyou.com/portfolio</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/portfolio" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/portfolio" />
     </url>
 
 <!-- Gallery main -->
     <url>
-        <loc>https://apertureofyou.com/en/gallery/</loc>
+        <loc>https://apertureofyou.com/gallery</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery" />
     </url>
     <url>
-        <loc>https://apertureofyou.com/hu/gallery/</loc>
+        <loc>https://apertureofyou.com/gallery</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery" />
     </url>
 
 <!-- Services -->
     <url>
-        <loc>https://apertureofyou.com/en/services/</loc>
+        <loc>https://apertureofyou.com/services</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/services" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/services" />
     </url>
     <url>
-        <loc>https://apertureofyou.com/hu/services/</loc>
+        <loc>https://apertureofyou.com/services</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/services" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/services" />
     </url>
 
 <!-- Contact -->
     <url>
-        <loc>https://apertureofyou.com/en/contact/</loc>
+        <loc>https://apertureofyou.com/contact</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/contact" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/contact" />
     </url>
     <url>
-        <loc>https://apertureofyou.com/hu/contact/</loc>
+        <loc>https://apertureofyou.com/contact</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/contact" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/contact" />
     </url>
     
 <!-- About -->
     <url>
-        <loc>https://apertureofyou.com/en/about/</loc>
+        <loc>https://apertureofyou.com/about</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/about" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/about" />
     </url>
     <url>
-        <loc>https://apertureofyou.com/hu/about/</loc>
+        <loc>https://apertureofyou.com/about</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/about" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/about" />
     </url>
 
 <!-- Gallery submenus-->
     <url>
-        <loc>https://apertureofyou.com/en/gallery/austria/</loc>
+        <loc>https://apertureofyou.com/gallery/austria</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/austria" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/austria" />
     </url>
     <url>
-        <loc>https://apertureofyou.com/hu/gallery/austria/</loc>
-    </url>
-
-    <url>
-        <loc>https://apertureofyou.com/en/gallery/croatia/</loc>
-    </url>
-    <url>
-        <loc>https://apertureofyou.com/hu/gallery/croatia/</loc>
+        <loc>https://apertureofyou.com/gallery/austria</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/austria" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/austria" />
     </url>
 
     <url>
-        <loc>https://apertureofyou.com/en/gallery/czechia/</loc>
+        <loc>https://apertureofyou.com/gallery/croatia</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/croatia" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/croatia" />
     </url>
     <url>
-        <loc>https://apertureofyou.com/hu/gallery/czechia/</loc>
-    </url>
-
-    <url>
-        <loc>https://apertureofyou.com/en/gallery/hungary/</loc>
-    </url>
-    <url>
-        <loc>https://apertureofyou.com/hu/gallery/hungary/</loc>
+        <loc>https://apertureofyou.com/gallery/croatia</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/croatia" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/croatia" />
     </url>
 
     <url>
-        <loc>https://apertureofyou.com/en/gallery/morocco/</loc>
+        <loc>https://apertureofyou.com/gallery/czechia</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/czechia" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/czechia" />
     </url>
     <url>
-        <loc>https://apertureofyou.com/hu/gallery/morocco/</loc>
-    </url>
-
-    <url>
-        <loc>https://apertureofyou.com/en/gallery/slovakia/</loc>
-    </url>
-    <url>
-        <loc>https://apertureofyou.com/hu/gallery/slovakia/</loc>
+        <loc>https://apertureofyou.com/gallery/czechia</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/czechia" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/czechia" />
     </url>
 
     <url>
-        <loc>https://apertureofyou.com/en/gallery/spain/</loc>
+        <loc>https://apertureofyou.com/gallery/hungary</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/hungary" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/hungary" />
     </url>
     <url>
-        <loc>https://apertureofyou.com/hu/gallery/spain/</loc>
+        <loc>https://apertureofyou.com/gallery/hungary</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/hungary" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/hungary" />
+    </url>
+
+    <url>
+        <loc>https://apertureofyou.com/gallery/morocco</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/morocco" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/morocco" />
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/gallery/morocco</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/morocco" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/morocco" />
+    </url>
+
+    <url>
+        <loc>https://apertureofyou.com/gallery/slovakia</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/slovakia" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/slovakia" />
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/gallery/slovakia</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/slovakia" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/slovakia" />
+    </url>
+
+    <url>
+        <loc>https://apertureofyou.com/gallery/spain</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/spain" />
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/spain" />
+    </url>
+    <url>
+        <loc>https://apertureofyou.com/gallery/spain</loc>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://apertureofyou.com/gallery/spain" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://apertureofyou.com/gallery/spain" />
     </url>
 
 </urlset>

@@ -269,7 +269,7 @@
         </trans-unit>
         <trans-unit id="3349019545297100349" datatype="html">
             <source>Interested in a session?</source>
-            <target>Szeretnél egy fotózást?</target>
+            <target>Érdekelne a fotózás?</target>
             <context-group purpose="location">
             <context context-type="sourcefile">src/app/pages/contact/contact.html</context>
             <context context-type="linenumber">10,11</context>
@@ -360,8 +360,8 @@
             </context-group>
         </trans-unit>
         <trans-unit id="6087528444959742941" datatype="html">
-            <source>No photographs found for this location.</source>
-            <target>Ezen a helyszínen nem találhatók fényképek.</target>
+            <source>Photographs for this location are being processed.</source>
+            <target>Ezen a helyszínen a fényképek feldolgozása folyamatban van.</target>
             <context-group purpose="location">
             <context context-type="sourcefile">src/app/pages/gallery/gallery.html</context>
             <context context-type="linenumber">43,44</context>

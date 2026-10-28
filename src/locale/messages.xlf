@@ -344,7 +344,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="6087528444959742941" datatype="html">
-        <source>No photographs found for this location.</source>
+        <source>Photographs for this location are being processed.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/gallery/gallery.html</context>
           <context context-type="linenumber">48,49</context>
