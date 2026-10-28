@@ -8,6 +8,17 @@ interface GalleryCountry {
   hungarianName: string;
 }
 
+export const GALLERY_COUNTRIES: GalleryCountry[] = [
+  { slug: 'austria', englishName: 'Austria', hungarianName: 'Ausztria' },
+  { slug: 'croatia', englishName: 'Croatia', hungarianName: 'Horvátország' },
+  { slug: 'czechia', englishName: 'Czechia', hungarianName: 'Csehország' },
+  { slug: 'greece', englishName: 'Greece', hungarianName: 'Görögország' },
+  { slug: 'hungary', englishName: 'Hungary', hungarianName: 'Magyarország' },
+  { slug: 'morocco', englishName: 'Morocco', hungarianName: 'Marokkó' },
+  { slug: 'slovakia', englishName: 'Slovakia', hungarianName: 'Szlovákia' },
+  { slug: 'spain', englishName: 'Spain', hungarianName: 'Spanyolország' },
+];
+
 @Component({
   selector: 'app-gallery',
   standalone: false,
@@ -20,16 +31,7 @@ export class Gallery implements OnInit {
   allImages: SiteImage[] = [];
   filteredImages: SiteImage[] = [];
   activeCountry: string | null = null;
-  readonly countries: GalleryCountry[] = [
-    { slug: 'austria', englishName: 'Austria', hungarianName: 'Ausztria' },
-    { slug: 'croatia', englishName: 'Croatia', hungarianName: 'Horvátország' },
-    { slug: 'czechia', englishName: 'Czechia', hungarianName: 'Csehország' },
-    { slug: 'greece', englishName: 'Greece', hungarianName: 'Görögország' },
-    { slug: 'hungary', englishName: 'Hungary', hungarianName: 'Magyarország' },
-    { slug: 'morocco', englishName: 'Morocco', hungarianName: 'Marokkó' },
-    { slug: 'slovakia', englishName: 'Slovakia', hungarianName: 'Szlovákia' },
-    { slug: 'spain', englishName: 'Spain', hungarianName: 'Spanyolország' },
-  ];
+  readonly countries = GALLERY_COUNTRIES;
   readonly isHungarian: boolean;
 
   constructor(
