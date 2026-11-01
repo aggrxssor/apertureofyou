@@ -1,8 +1,59 @@
 <section class="services-page">
+
+    <nav
+        class="services-section-nav"
+        [class.visible]="isNavigatorVisible"
+        aria-label="Services sections"
+        i18n-aria-label>
+        <a
+            href="#services-introduction"
+            [class.active]="activeSection === 'services-introduction'"
+            [attr.aria-current]="activeSection === 'services-introduction' ? 'location' : null"
+            (click)="navigateToSection($event, 'services-introduction')"
+            i18n>Services</a>
+        <a
+            href="#blue-hour-session"
+            [class.active]="activeSection === 'blue-hour-session'"
+            [attr.aria-current]="activeSection === 'blue-hour-session' ? 'location' : null"
+            (click)="navigateToSection($event, 'blue-hour-session')"
+            i18n>The Blue Hour Session</a>
+        <a
+            href="#blue-hour-panorama-session"
+            [class.active]="activeSection === 'blue-hour-panorama-session'"
+            [attr.aria-current]="activeSection === 'blue-hour-panorama-session' ? 'location' : null"
+            (click)="navigateToSection($event, 'blue-hour-panorama-session')"
+            i18n>The Blue Hour Panorama Session</a>
+        <a
+            href="#couples-connection"
+            [class.active]="activeSection === 'couples-connection'"
+            [attr.aria-current]="activeSection === 'couples-connection' ? 'location' : null"
+            (click)="navigateToSection($event, 'couples-connection')"
+            i18n>Couples &amp; Connection</a>
+        <a
+            href="#custom-sessions"
+            [class.active]="activeSection === 'custom-sessions'"
+            [attr.aria-current]="activeSection === 'custom-sessions' ? 'location' : null"
+            (click)="navigateToSection($event, 'custom-sessions')"
+            i18n>Custom Sessions</a>
+        <a
+            href="#specialty-commissions"
+            [class.active]="activeSection === 'specialty-commissions'"
+            [attr.aria-current]="activeSection === 'specialty-commissions' ? 'location' : null"
+            (click)="navigateToSection($event, 'specialty-commissions')"
+            i18n>Specialty Commissions</a>
+        <span class="services-section-nav-divider" aria-hidden="true"></span>
+        <a
+            href="#digital-architecture"
+            [class.active]="activeSection === 'digital-architecture'"
+            [attr.aria-current]="activeSection === 'digital-architecture' ? 'location' : null"
+            (click)="navigateToSection($event, 'digital-architecture')">
+            <span i18n>Bespoke Web- and Logo Design</span>
+        </a>
+    </nav>
     
     <section class="hero-section services-hero" aria-label="Services featured photography"></section>
 
-    <section class="home-section home-introduction">
+    <section class="home-section home-introduction" id="services-introduction">
         <div class="home-copy">
             <p class="section-kicker"></p>
             <h2 class="section-title" i18n>A tailored experience.</h2>
@@ -25,7 +76,7 @@
     <section class="home-section">
         <div class="packages-container">
             
-            <article class="service-row">
+            <article class="service-row" id="blue-hour-session">
                 
                 <div class="service-text">
                     <h3 class="package-title" i18n>The Blue Hour Session</h3>
@@ -43,7 +94,7 @@
 
             </article>
 
-            <article class="service-row">
+            <article class="service-row" id="blue-hour-panorama-session">
                 
                 <div class="service-text">
                     <h3 class="package-title" i18n>The Blue Hour Panorama Session</h3>
@@ -60,7 +111,7 @@
 
             </article>
 
-            <article class="service-row">
+            <article class="service-row" id="couples-connection">
 
                 <div class="service-text">
                     <h3 class="package-title" i18n>Couples & Connection</h3>
@@ -77,7 +128,7 @@
 
             </article>
 
-            <article class="service-row">
+            <article class="service-row" id="custom-sessions">
                 
                 <div class="service-text">
                     <h3 class="package-title" i18n>Custom Sessions</h3>
@@ -97,7 +148,7 @@
         </div>
     </section>
 
-    <article class="service-row specialty-row">
+    <article class="service-row specialty-row" id="specialty-commissions">
                 
         <div class="specialty-header">
             <h3 class="package-title" style="text-align: center;" i18n>Specialty Commissions</h3>
@@ -127,7 +178,7 @@
 
     <section class="home-section home-closing">
         <div class="packages-container">
-            <article class="service-row">
+            <article class="service-row" id="digital-architecture">
                 <div class="service-image-wrapper">
                     <img src="assets/hero/apertureofu_b&w.png" alt="Bespoke Web Design" class="circle-img bespoke-img" />
                 </div>

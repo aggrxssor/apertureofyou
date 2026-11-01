@@ -4,6 +4,64 @@
     min-height: 100vh;
 }
 
+.services-section-nav {
+    position: fixed;
+    top: 50%;
+    left: clamp(1rem, 3vw, 3rem);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    width: max-content;
+    opacity: 0;
+    transform: translate(-12px, -50%);
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.services-section-nav.visible {
+    opacity: 1;
+    transform: translate(0, -50%);
+    pointer-events: auto;
+}
+
+.services-section-nav a {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    white-space: nowrap;
+    color: #777777;
+    font-size: 0.82rem;
+    line-height: 1.35;
+    text-decoration: none;
+    transition: color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.services-section-nav a.active {
+    color: #1a1a1a;
+    transform: translateX(8px);
+}
+
+.services-section-nav a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
+.services-section-nav-divider {
+    width: 11rem;
+    height: 1px;
+    margin: 0.1rem 0;
+    background-color: #b8b8b8;
+}
+
+@media (max-width: 1299px) {
+    .services-section-nav {
+        display: none;
+    }
+}
+
 .services-hero {
     height: 60vh;
     width: 100%;
@@ -78,6 +136,7 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    width: 100%;
     margin-bottom: 8rem;
 }
 
@@ -87,6 +146,7 @@
 
 .service-text {
     flex: 1;
+    min-width: 0;
     max-width: 550px;
     text-align: left;
 }
@@ -128,6 +188,7 @@
 
 .service-image-wrapper {
     flex: 1;
+    min-width: 0;
     display: flex;
     justify-content: center;
 }
@@ -190,6 +251,30 @@
     text-transform: uppercase;
     color: #1a1a1a;
     margin: 0;
+}
+
+@media (min-width: 901px) {
+    .packages-container,
+    .specialty-row {
+        width: min(100%, 60vw);
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .service-row:not(.specialty-row) {
+        gap: min(4rem, 4.5vw);
+    }
+
+    .specialty-grid {
+        gap: min(4rem, 4.5vw);
+    }
+
+    .circle-img-small {
+        width: min(200px, 14.15vw);
+        min-width: 0;
+        max-width: 200px;
+    }
 }
 
 @media (max-width: 900px) {
