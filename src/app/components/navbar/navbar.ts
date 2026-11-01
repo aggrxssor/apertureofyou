@@ -12,6 +12,7 @@ export class Navbar implements OnInit {
     isHidden = false;
     isAbsolute = true;
     isGlass = false;
+    isAtTop = typeof window === 'undefined' || window.scrollY <= 0;
     lastScrollTop = 0;
 
     isMobileMenuOpen = false;
@@ -54,6 +55,7 @@ export class Navbar implements OnInit {
     @HostListener('window:scroll', [])
     onWindowScroll() {
         const currentScrollTop = Math.max(0, window.pageYOffset || document.documentElement.scrollTop);
+        this.isAtTop = currentScrollTop <= 0;
         const isScrollingDown = currentScrollTop > this.lastScrollTop;
 
         if (isScrollingDown) {

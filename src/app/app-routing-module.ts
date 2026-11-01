@@ -38,6 +38,7 @@ const routes: Routes = [
   {
     path: 'contact',
     component: Contact,
+    data: { headerTheme: 'contact-header' },
     title: localizedPageTitle('Contact | Aperture of You', 'Kapcsolat | Aperture of You'),
   },
   {
@@ -59,13 +60,14 @@ const routes: Routes = [
   },
   {
     path: 'services',
-    component: Services,
+    component: Services,    
+    data: { headerTheme: 'contact-header' },
     title: localizedPageTitle('Services | Aperture of You', 'Szolgáltatások | Aperture of You'),
   },
   {
     path: 'about',
     component: About,
-    data: { headerTheme: 'dark-header' },
+    data: { headerTheme: 'dark-header contact-header' },
     title: localizedPageTitle('About | Aperture of You', 'Rólam | Aperture of You'),
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },

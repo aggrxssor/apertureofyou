@@ -50,6 +50,53 @@
     opacity: 0.3;
 }
 
+.contact-header .navbar {
+    isolation: isolate;
+}
+
+.contact-header .navbar::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto -0.5rem 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgba(26, 26, 26, 0);
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: opacity 0.4s ease, background-color 0.4s ease, backdrop-filter 0.4s ease,
+                -webkit-backdrop-filter 0.4s ease, border-color 0.4s ease;
+}
+
+.contact-header .navbar::after {
+    content: "";
+    position: absolute;
+    inset: 0 auto -0.5rem 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    z-index: -1;
+    pointer-events: none;
+    background-image: url('../../../assets/noise.svg');
+    background-size: 50px 50px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.contact-header.at-top .navbar::before {
+    opacity: 1;
+    background-color: rgba(26, 26, 26, 0.01);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-bottom-color: rgba(255, 255, 255, 0.01);
+}
+
+.contact-header.at-top .navbar::after {
+    opacity: 0.3;
+}
+
 .glass::before {
     content: "";
     position: absolute;
@@ -185,12 +232,32 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes active-link-glow {
+    0%, 100% { text-shadow: 0 0 2px rgba(255, 255, 255, 0.2); }
+    50% { text-shadow: 0 0 8px rgba(255, 255, 255, 0.45); }
+}
+
+@keyframes active-link-glow-dark {
+    0%, 100% { text-shadow: 0 0 2px rgba(0, 0, 0, 0.15); }
+    50% { text-shadow: 0 0 8px rgba(0, 0, 0, 0.35); }
+}
+
 .dark-header .site-title {
     color: black;
 }
 
 .dark-header .nav-link {
     color: black;
+}
+
+.nav-link.active {
+    color: #d6d6d6;
+    animation: active-link-glow 3.2s ease-in-out infinite;
+}
+
+.dark-header .nav-link.active {
+    color: rgba(0, 0, 0, 0.65);
+    animation-name: active-link-glow-dark;
 }
 
 .dark-header .navbar-nav .nav-item:hover .nav-link {
@@ -424,8 +491,16 @@
 }
 
 .slider-accordion-content a.active {
-    color: #000000;
+    color: #666666;
     font-weight: 700;
+    animation: active-link-glow-dark 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-link.active,
+    .slider-accordion-content a.active {
+        animation: none;
+    }
 }
 
 .gallery-active {
