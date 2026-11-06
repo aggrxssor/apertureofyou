@@ -14,9 +14,14 @@ export class ImageModal implements OnChanges, OnDestroy {
   private pushedState = false;
   private scrollPosition = 0;
   isClosing = false;
+  isImageLoaded = false;
   private lockInterval: any;
 
   ngOnChanges(changes: SimpleChanges): void {
+    if (changes['image']) {
+      this.isImageLoaded = false;
+    }
+
     if (changes['image'] && this.image) {
       this.isClosing = false;
       if (typeof window !== 'undefined' && !this.pushedState) {
@@ -26,6 +31,10 @@ export class ImageModal implements OnChanges, OnDestroy {
         this.pushedState = true;
       }
     }
+  }
+
+  onImageLoad(): void {
+    this.isImageLoaded = true;
   }
 
   @HostListener('window:popstate')

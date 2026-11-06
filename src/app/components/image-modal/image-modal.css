@@ -37,11 +37,38 @@
     animation: popModalOut 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+.image-modal-image {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    max-height: calc(98vh - 4rem);
+    overflow: hidden;
+}
+
 .image-modal-img {
     display: block;
     max-width: 100%;
     max-height: calc(98vh - 4rem);
     object-fit: contain;
+}
+
+.image-modal-placeholder {
+    filter: blur(12px);
+}
+
+.image-modal-full {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    filter: blur(12px);
+    transition: filter 0.3s ease;
+}
+
+.image-modal-image.loaded .image-modal-full {
+    visibility: visible;
+    filter: blur(0);
 }
 
 .image-modal-close {
@@ -157,5 +184,11 @@
 
     .image-modal-frame {
         padding: 0.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .image-modal-full {
+        transition-duration: 0.01ms;
     }
 }

@@ -12,14 +12,21 @@
             <span class="close-icon">&times;</span>
         </button>
 
-        <img 
-            class="image-modal-img" 
-            [src]="image.midSizedUrl" 
-            [attr.srcset]="image.thumbnailUrl + ' 600w, ' + image.midSizedUrl + ' 1200w'"
-            sizes="100vw"
-            fetchpriority="high"
-            [alt]="image.alt" 
-        />
+        <div class="image-modal-image" [class.loaded]="isImageLoaded">
+            <img
+                class="image-modal-img image-modal-placeholder"
+                [src]="image.thumbnailUrl"
+                alt=""
+                aria-hidden="true"
+            />
+            <img
+                class="image-modal-img image-modal-full"
+                [src]="image.midSizedUrl"
+                fetchpriority="high"
+                [alt]="image.alt"
+                (load)="onImageLoad()"
+            />
+        </div>
 
         <p *ngIf="image.title" class="image-modal-title">{{ image.title }}</p>
 
