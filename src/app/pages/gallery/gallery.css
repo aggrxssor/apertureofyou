@@ -97,6 +97,11 @@
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+.grid-wrapper > .grid-item > img.thumbnail-visible {
+    animation: thumbnail-reveal 0.45s ease-out;
+    clip-path: inset(0 round 5px);
+}
+
 .grid-wrapper > .grid-item:hover > img,
 .grid-wrapper > .grid-item:focus-visible > img {
     opacity: 0.85;
@@ -106,6 +111,23 @@
 .grid-wrapper > .grid-item:focus-visible {
     outline: 2px solid #1a1a1a;
     outline-offset: 4px;
+}
+
+@keyframes thumbnail-reveal {
+    from {
+        opacity: 0.95;
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .grid-wrapper > .grid-item > img.thumbnail-visible {
+        animation: none;
+    }
 }
 
 .grid-wrapper .landscape,

@@ -17,6 +17,7 @@ import { Home } from './pages/home/home';
 import { Portfolio } from './pages/portfolio/portfolio';
 import { Services } from './pages/services/services';
 import { GridSorter } from './components/grid-sorter/grid-sorter';
+import { ThumbnailReveal } from './directives/thumbnail-reveal.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { GridSorter } from './components/grid-sorter/grid-sorter';
     Home,
     Portfolio,
     Services,
-    GridSorter
+    GridSorter,
+    ThumbnailReveal
   ],
   imports: [
     BrowserModule,
