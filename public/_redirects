@@ -1,1 +1,11 @@
 /       /en/   301
+/en/gallery/Austria  /en/gallery/austria  301
+/en/gallery/Croatia  /en/gallery/croatia  301
+/hu/gallery/Austria  /hu/gallery/austria  301
+/hu/gallery/Croatia  /hu/gallery/croatia  301
+/gallery        /en/gallery        301
+/gallery/*      /en/gallery/:splat 301
+/portfolio      /en/portfolio      301
+/services       /en/services       301
+/contact        /en/contact        301
+/about          /en/about          301
