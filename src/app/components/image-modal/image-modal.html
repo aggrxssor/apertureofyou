@@ -12,7 +12,12 @@
             <span class="close-icon">&times;</span>
         </button>
 
-        <div class="image-modal-image" [class.loaded]="isImageLoaded">
+        <div
+            class="image-modal-image"
+            [class.loaded]="isImageLoaded"
+            [style.width.px]="imageDisplaySize?.width ?? null"
+            [style.height.px]="imageDisplaySize?.height ?? null"
+        >
             <img
                 class="image-modal-img image-modal-placeholder"
                 [src]="image.thumbnailUrl"

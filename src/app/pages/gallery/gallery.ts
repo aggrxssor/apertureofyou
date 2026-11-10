@@ -28,6 +28,7 @@ export const GALLERY_COUNTRIES: GalleryCountry[] = [
 export class Gallery implements OnInit {
   readonly images: SiteImage[];
   selectedImage: SiteImage | null = null;
+  selectedImageAspectRatio: number | null = null;
   allImages: SiteImage[] = [];
   filteredImages: SiteImage[] = [];
   activeCountry: string | null = null;
@@ -94,11 +95,31 @@ export class Gallery implements OnInit {
     this.router.navigate(['/gallery']);
   }
 
-  openImage(image: SiteImage): void {
+  openImage(image: SiteImage, event: MouseEvent): void {
+    const thumbnail = event.currentTarget instanceof HTMLElement
+      ? event.currentTarget.querySelector('img')
+      : null;
+    const width = thumbnail?.naturalWidth ?? 0;
+    const height = thumbnail?.naturalHeight ?? 0;
+    this.selectedImageAspectRatio = width && height
+      ? width / height
+      : this.getFallbackAspectRatio(image);
     this.selectedImage = image;
   }
 
   closeImage(): void {
     this.selectedImage = null;
+    this.selectedImageAspectRatio = null;
+  }
+
+  private getFallbackAspectRatio(image: SiteImage): number {
+    switch (image.orientation) {
+      case 'portrait': return 2 / 3;
+      case 'landscape': return 3 / 2;
+      case 'panorama': return 2.4;
+      case 'ultrawide': return 3;
+      case 'square': return 1;
+      default: return 1;
+    }
   }
 }

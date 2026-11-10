@@ -22,6 +22,7 @@ describe('ImageModal', () => {
   });
 
   it('should reveal the full image after it loads', () => {
+    fixture.componentRef.setInput('aspectRatio', 1.5);
     fixture.componentRef.setInput('image', {
       id: 'test',
       title: '',
@@ -40,6 +41,20 @@ describe('ImageModal', () => {
     fixture.detectChanges();
 
     expect(imageStack.classList.contains('loaded')).toBeTrue();
+  });
+
+  it('should size the image area to the viewport while preserving its aspect ratio', () => {
+    fixture.componentRef.setInput('aspectRatio', 2 / 3);
+
+    const imageDisplaySize = component.imageDisplaySize;
+    expect(imageDisplaySize).not.toBeNull();
+    if (!imageDisplaySize) {
+      return;
+    }
+
+    expect(imageDisplaySize.width / imageDisplaySize.height).toBeCloseTo(2 / 3);
+    expect(imageDisplaySize.width).toBeLessThanOrEqual(window.innerWidth);
+    expect(imageDisplaySize.height).toBeLessThanOrEqual(window.innerHeight);
   });
 
   it('should reset the loading state when the image changes', () => {

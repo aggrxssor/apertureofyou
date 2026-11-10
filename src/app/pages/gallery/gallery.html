@@ -32,7 +32,7 @@
             class="grid-item"
             [ngClass]="image.orientation"
             type="button"
-            (click)="openImage(image)"
+            (click)="openImage(image, $event)"
         >
             <img 
                 [src]="image.thumbnailUrl" 
@@ -57,4 +57,8 @@
     </div>
 </section>
 
-<app-image-modal [image]="selectedImage" (closeModal)="closeImage()"></app-image-modal>
+<app-image-modal
+    [image]="selectedImage"
+    [aspectRatio]="selectedImageAspectRatio"
+    (closeModal)="closeImage()"
+></app-image-modal>
