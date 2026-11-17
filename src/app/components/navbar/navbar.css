@@ -270,6 +270,16 @@
     gap: 0.6rem;
 }
 
+.nav-lang-switcher .nav-lang-btn,
+.nav-lang-switcher .nav-lang-divider {
+    color: white;
+}
+
+.dark-header .nav-lang-switcher .nav-lang-btn,
+.dark-header .nav-lang-switcher .nav-lang-divider {
+    color: black;
+}
+
 .nav-lang-btn {
     background-color: transparent;
     border: none;
@@ -307,10 +317,9 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.nav-lang-divider {
+.nav-lang-switcher .nav-lang-divider {
     opacity: 0.3;
     font-size: 0.9rem;
-    color: inherit;
 }
 
 .nav-lang-wrapper {
@@ -529,7 +538,7 @@
     color: #000000;
 }
 
-.nav-lang-divider {
+.slider-lang-switcher .nav-lang-divider {
     color: #000000;
     opacity: 0.3;
 }
