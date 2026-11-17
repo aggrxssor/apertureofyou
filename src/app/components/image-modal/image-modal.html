@@ -6,6 +6,10 @@
     aria-modal="true"
     [attr.aria-label]="image.alt"
     (click)="close()"
+    (touchstart)="$event.stopPropagation()"
+    (touchmove)="$event.stopPropagation()"
+    (touchend)="$event.stopPropagation()"
+    (touchcancel)="$event.stopPropagation()"
 >
     <div class="image-modal-frame" (click)="$event.stopPropagation()">
         <button class="image-modal-close" type="button" aria-label="Close image" (click)="close()">

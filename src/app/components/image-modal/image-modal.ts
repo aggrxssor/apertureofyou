@@ -19,6 +19,9 @@ export class ImageModal implements OnChanges, OnDestroy {
   isClosing = false;
   isImageLoaded = false;
   private lockInterval: any;
+  private bodyOverflow = '';
+  private documentOverflow = '';
+  private isScrollLocked = false;
 
   get imageDisplaySize(): { width: number; height: number } | null {
     if (!this.aspectRatio || !this.viewportWidth || !this.viewportHeight) {
@@ -51,6 +54,7 @@ export class ImageModal implements OnChanges, OnDestroy {
 
     if (changes['image'] && this.image) {
       this.isClosing = false;
+      this.lockPageScroll();
       if (typeof window !== 'undefined' && !this.pushedState) {
         this.scrollPosition = window.scrollY;
         
@@ -95,6 +99,7 @@ export class ImageModal implements OnChanges, OnDestroy {
     if (this.pushedState && typeof window !== 'undefined') {
       window.history.back();
     }
+    this.unlockPageScroll();
     this.releaseScrollLock();
   }
 
@@ -128,7 +133,30 @@ export class ImageModal implements OnChanges, OnDestroy {
     setTimeout(() => {
       this.isClosing = false;
       this.closeModal.emit();
+      this.unlockPageScroll();
       this.releaseScrollLock();
     }, 250); 
+  }
+
+  private lockPageScroll(): void {
+    if (typeof document === 'undefined' || this.isScrollLocked) {
+      return;
+    }
+
+    this.bodyOverflow = document.body.style.overflow;
+    this.documentOverflow = document.documentElement.style.overflow;
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+    this.isScrollLocked = true;
+  }
+
+  private unlockPageScroll(): void {
+    if (typeof document === 'undefined' || !this.isScrollLocked) {
+      return;
+    }
+
+    document.body.style.overflow = this.bodyOverflow;
+    document.documentElement.style.overflow = this.documentOverflow;
+    this.isScrollLocked = false;
   }
 }

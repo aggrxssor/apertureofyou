@@ -82,8 +82,37 @@ export class Navbar implements OnInit {
         this.lastScrollTop = currentScrollTop;
     }
 
+    @HostListener('window:resize')
+    onWindowResize() {
+        if (this.isMobileMenuOpen) {
+            this.closeMobileMenu();
+        }
+    }
+
+    @HostListener('document:touchstart', ['$event'])
+    onDocumentTouchStart(event: TouchEvent) {
+        if (this.isImageModalOpen() || typeof document === 'undefined') {
+            return;
+        }
+
+        const target = event.target;
+        if (!(target instanceof Element)) {
+            return;
+        }
+
+        if (target.closest('.dropdown-menu') || target.closest('.dropdown-toggle')) {
+            return;
+        }
+
+        this.closeOpenDropdown();
+    }
+
     @HostListener('window:touchstart', ['$event'])
     onTouchStart(event: TouchEvent) {
+        if (this.isImageModalOpen()) {
+            return;
+        }
+
         if (event.touches.length > 1) {
             this.isMultiTouch = true;
             return;
@@ -95,7 +124,7 @@ export class Navbar implements OnInit {
 
     @HostListener('window:touchend', ['$event'])
     onTouchEnd(event: TouchEvent) {
-        if (this.isMultiTouch) {
+        if (this.isMultiTouch || this.isImageModalOpen()) {
             return;
         }
         this.touchEndX = event.changedTouches[0].screenX;
@@ -104,6 +133,10 @@ export class Navbar implements OnInit {
     }
 
     private handleSwipe() {
+        if (this.isImageModalOpen()) {
+            return;
+        }
+
         const deltaX = this.touchEndX - this.touchStartX;
         const deltaY = this.touchEndY - this.touchStartY;
 
@@ -114,6 +147,23 @@ export class Navbar implements OnInit {
                 this.closeMobileMenu();
             }
         }
+    }
+
+    private isImageModalOpen(): boolean {
+        return typeof document !== 'undefined'
+            && document.querySelector('.image-modal-backdrop') !== null;
+    }
+
+    private closeOpenDropdown(): void {
+        const openMenu = document.querySelector<HTMLElement>('.dropdown-menu.show');
+        if (!openMenu) {
+            return;
+        }
+
+        openMenu.classList.remove('show');
+        openMenu.parentElement
+            ?.querySelector<HTMLElement>('.dropdown-toggle')
+            ?.setAttribute('aria-expanded', 'false');
     }
 
     toggleMobileMenu() {
