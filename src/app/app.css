@@ -78,6 +78,12 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .page-content {
+        padding-top: 60px;
+    }
+}
+
 @media (max-width: 767px) {
     .page-content{
         padding-top: 4.1rem;

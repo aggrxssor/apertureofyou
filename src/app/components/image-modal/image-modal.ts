@@ -9,13 +9,43 @@ import { SiteImage } from '../../services/image.service';
 })
 export class ImageModal implements OnChanges, OnDestroy {
   @Input() image: SiteImage | null = null;
+  @Input() aspectRatio: number | null = null;
   @Output() closeModal = new EventEmitter<void>();
 
   private pushedState = false;
   private scrollPosition = 0;
+  private viewportWidth = typeof window === 'undefined' ? 0 : window.innerWidth;
+  private viewportHeight = typeof window === 'undefined' ? 0 : window.innerHeight;
   isClosing = false;
   isImageLoaded = false;
   private lockInterval: any;
+  private bodyOverflow = '';
+  private documentOverflow = '';
+  private isScrollLocked = false;
+
+  get imageDisplaySize(): { width: number; height: number } | null {
+    if (!this.aspectRatio || !this.viewportWidth || !this.viewportHeight) {
+      return null;
+    }
+
+    const gutter = this.viewportWidth <= 767 ? 16 : 32;
+    const frameSpace = this.image?.title ? 56 : 24;
+    const maxWidth = Math.max(0, this.viewportWidth - 2 * gutter - frameSpace);
+    const maxHeight = Math.max(0, this.viewportHeight - 2 * gutter - frameSpace);
+    const width = Math.min(maxWidth, maxHeight * this.aspectRatio);
+
+    return { width, height: width / this.aspectRatio };
+  }
+
+  @HostListener('window:resize')
+  onViewportResize(): void {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
+    this.viewportWidth = window.innerWidth;
+    this.viewportHeight = window.innerHeight;
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['image']) {
@@ -24,6 +54,7 @@ export class ImageModal implements OnChanges, OnDestroy {
 
     if (changes['image'] && this.image) {
       this.isClosing = false;
+      this.lockPageScroll();
       if (typeof window !== 'undefined' && !this.pushedState) {
         this.scrollPosition = window.scrollY;
         
@@ -68,6 +99,7 @@ export class ImageModal implements OnChanges, OnDestroy {
     if (this.pushedState && typeof window !== 'undefined') {
       window.history.back();
     }
+    this.unlockPageScroll();
     this.releaseScrollLock();
   }
 
@@ -101,7 +133,30 @@ export class ImageModal implements OnChanges, OnDestroy {
     setTimeout(() => {
       this.isClosing = false;
       this.closeModal.emit();
+      this.unlockPageScroll();
       this.releaseScrollLock();
     }, 250); 
+  }
+
+  private lockPageScroll(): void {
+    if (typeof document === 'undefined' || this.isScrollLocked) {
+      return;
+    }
+
+    this.bodyOverflow = document.body.style.overflow;
+    this.documentOverflow = document.documentElement.style.overflow;
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+    this.isScrollLocked = true;
+  }
+
+  private unlockPageScroll(): void {
+    if (typeof document === 'undefined' || !this.isScrollLocked) {
+      return;
+    }
+
+    document.body.style.overflow = this.bodyOverflow;
+    document.documentElement.style.overflow = this.documentOverflow;
+    this.isScrollLocked = false;
   }
 }

@@ -9,6 +9,12 @@
     background-repeat: no-repeat;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hero-section {
+        max-height: 37.5vh;
+    }
+}
+
 .home-section {
     padding: 6rem 1.5rem;
     background: #f7f4ef;

@@ -71,6 +71,12 @@
     background-repeat: no-repeat;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+    .services-hero {
+        max-height: 30vh;
+    }
+}
+
 .home-section {
     padding: 6rem 1.5rem;
     background: #f7f4ef;
@@ -338,5 +344,32 @@
 
     .circle-img {
         max-width: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .service-row:not(.specialty-row) {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .service-text {
+        text-align: left;
+    }
+
+    .specialty-grid {
+        flex-direction: row;
+        gap: clamp(1rem, 4vw, 4rem);
+    }
+
+    .specialty-item {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .circle-img-small {
+        width: min(100%, 18vw);
+        min-width: 0;
+        max-width: 200px;
     }
 }

@@ -227,6 +227,35 @@
     }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .site-header .navbar,
+    .site-header .navbar .navbar-collapse,
+    .site-header .navbar-nav {
+        height: auto;
+        overflow: visible;
+    }
+
+    .nav-item.dropdown {
+        position: relative;
+    }
+
+    .nav-item.dropdown .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 0.5rem;
+        z-index: 1;
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .nav-item.dropdown .dropdown-menu.show {
+        display: block;
+    }
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
@@ -270,6 +299,16 @@
     gap: 0.6rem;
 }
 
+.nav-lang-switcher .nav-lang-btn,
+.nav-lang-switcher .nav-lang-divider {
+    color: white;
+}
+
+.dark-header .nav-lang-switcher .nav-lang-btn,
+.dark-header .nav-lang-switcher .nav-lang-divider {
+    color: black;
+}
+
 .nav-lang-btn {
     background-color: transparent;
     border: none;
@@ -307,10 +346,9 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.nav-lang-divider {
+.nav-lang-switcher .nav-lang-divider {
     opacity: 0.3;
     font-size: 0.9rem;
-    color: inherit;
 }
 
 .nav-lang-wrapper {
@@ -339,11 +377,47 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .site-header {
+        transform: none !important;
+    }
+
+    .site-header > .container {
+        flex-direction: column !important;
+    }
+
+    .site-title {
+        margin-bottom: 1rem !important;
+    }
+
+    .mobile-menu-btn {
+        display: none !important;
+    }
+
+    .site-header .navbar {
+        display: flex !important;
+    }
+
+    .site-header .navbar .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+
+    .site-header .navbar-nav {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .nav-lang-wrapper {
+        display: none !important;
+    }
+}
+
 .mobile-menu-btn {
     background-color: transparent;
     border: none;
     color: #1a1a1a !important;
-    font-size: 1.8rem;
     font-weight: 300;
     cursor: pointer;
     padding: 0 0.5rem;
@@ -351,6 +425,20 @@
     display: flex;
     align-items: center;
     line-height: 1;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 24px;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
 }
 
 .mobile-slider-glass-bar {
@@ -374,7 +462,9 @@
     cursor: pointer;
     
     transform: translateX(100vw);
-    transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1), filter 0.2s ease, background-color 0.2s ease;
+    visibility: hidden;
+    transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1), visibility 0s linear 0.4s,
+                filter 0.2s ease, background-color 0.2s ease;
 }
 
 .mobile-slider-glass-bar::after {
@@ -412,7 +502,8 @@
     -webkit-backdrop-filter: blur(15px) brightness(0.6);
     
     transform: translateX(100vw);
-    transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    visibility: hidden;
+    transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1), visibility 0s linear 0.4s;
 }
 
 .mobile-slider-knockout {
@@ -433,13 +524,16 @@
     overflow-y: auto;
     
     transform: translateX(100vw);
-    transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    visibility: hidden;
+    transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1), visibility 0s linear 0.4s;
 }
 
 .mobile-slider-glass-bar.open,
 .mobile-slider-blur-bg.open,
 .mobile-slider-knockout.open {
     transform: translateX(0);
+    visibility: visible;
+    transition-delay: 0s;
 }
 
 .mobile-slider-glass-bar.open,
@@ -529,7 +623,14 @@
     color: #000000;
 }
 
-.nav-lang-divider {
+.slider-lang-switcher .nav-lang-divider {
     color: #000000;
     opacity: 0.3;
+}
+
+@media (min-aspect-ratio: 21/9) {
+    .site-header .nav-lang-switcher .nav-lang-btn,
+    .site-header .nav-lang-switcher .nav-lang-divider {
+        color: #000000;
+    }
 }

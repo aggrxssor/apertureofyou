@@ -6,13 +6,22 @@
     aria-modal="true"
     [attr.aria-label]="image.alt"
     (click)="close()"
+    (touchstart)="$event.stopPropagation()"
+    (touchmove)="$event.stopPropagation()"
+    (touchend)="$event.stopPropagation()"
+    (touchcancel)="$event.stopPropagation()"
 >
     <div class="image-modal-frame" (click)="$event.stopPropagation()">
         <button class="image-modal-close" type="button" aria-label="Close image" (click)="close()">
             <span class="close-icon">&times;</span>
         </button>
 
-        <div class="image-modal-image" [class.loaded]="isImageLoaded">
+        <div
+            class="image-modal-image"
+            [class.loaded]="isImageLoaded"
+            [style.width.px]="imageDisplaySize?.width ?? null"
+            [style.height.px]="imageDisplaySize?.height ?? null"
+        >
             <img
                 class="image-modal-img image-modal-placeholder"
                 [src]="image.thumbnailUrl"
