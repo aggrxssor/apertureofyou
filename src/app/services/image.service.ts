@@ -19,6 +19,7 @@ export interface SiteImage {
 })
 export class ImageService {
   private readonly portfolioImages: SiteImage[] =
+    
     [
   {
     id: 'morocco2',
@@ -26,6 +27,33 @@ export class ImageService {
     alt: 'morocco2',
     thumbnailUrl: 'assets/thumbnails/portfolio/morocco2.jpg',
     midSizedUrl: 'assets/mid-sized/portfolio/morocco2.jpg',
+    orientation: 'portrait',
+    location: 'morocco'
+  },
+  {
+    id: 'morocco3',
+    title: '',
+    alt: 'morocco3',
+    thumbnailUrl: 'assets/thumbnails/portfolio/morocco3.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/morocco3.jpg',
+    orientation: 'portrait',
+    location: 'morocco'
+  },
+  {
+    id: 'hungary18',
+    title: '',
+    alt: 'hungary18',
+    thumbnailUrl: 'assets/thumbnails/portfolio/hungary18.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/hungary18.jpg',
+    orientation: 'portrait',
+    location: 'hungary'
+  },
+  {
+    id: 'morocco6',
+    title: '',
+    alt: 'morocco6',
+    thumbnailUrl: 'assets/thumbnails/portfolio/morocco6.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/morocco6.jpg',
     orientation: 'portrait',
     location: 'morocco'
   },
@@ -39,33 +67,6 @@ export class ImageService {
     location: 'slovakia'
   },
   {
-    id: 'hungary18',
-    title: '',
-    alt: 'hungary18',
-    thumbnailUrl: 'assets/thumbnails/portfolio/hungary18.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/hungary18.jpg',
-    orientation: 'portrait',
-    location: 'hungary'
-  },
-  {
-    id: 'morocco3',
-    title: '',
-    alt: 'morocco3',
-    thumbnailUrl: 'assets/thumbnails/portfolio/morocco3.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/morocco3.jpg',
-    orientation: 'portrait',
-    location: 'morocco'
-  },
-  {
-    id: 'morocco6',
-    title: '',
-    alt: 'morocco6',
-    thumbnailUrl: 'assets/thumbnails/portfolio/morocco6.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/morocco6.jpg',
-    orientation: 'portrait',
-    location: 'morocco'
-  },
-  {
     id: 'morocco4',
     title: '',
     alt: 'morocco4',
@@ -75,11 +76,11 @@ export class ImageService {
     location: 'morocco'
   },
   {
-    id: 'morocco14',
+    id: 'morocco13',
     title: '',
-    alt: 'morocco14',
-    thumbnailUrl: 'assets/thumbnails/portfolio/morocco14.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/morocco14.jpg',
+    alt: 'morocco13',
+    thumbnailUrl: 'assets/thumbnails/portfolio/morocco13.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/morocco13.jpg',
     orientation: 'square',
     location: 'morocco'
   },
@@ -93,13 +94,13 @@ export class ImageService {
     location: 'morocco'
   },
   {
-    id: 'morocco8',
+    id: 'tatras3',
     title: '',
-    alt: 'morocco8',
-    thumbnailUrl: 'assets/thumbnails/portfolio/morocco8.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/morocco8.jpg',
-    orientation: 'square',
-    location: 'morocco'
+    alt: 'tatras3',
+    thumbnailUrl: 'assets/thumbnails/portfolio/tatras3.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/tatras3.jpg',
+    orientation: 'portrait',
+    location: 'slovakia'
   },
   {
     id: 'tatra-field',
@@ -111,11 +112,38 @@ export class ImageService {
     location: 'slovakia'
   },
   {
-    id: 'morocco13',
+    id: 'greece8',
     title: '',
-    alt: 'morocco13',
-    thumbnailUrl: 'assets/thumbnails/portfolio/morocco13.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/morocco13.jpg',
+    alt: 'greece8',
+    thumbnailUrl: 'assets/thumbnails/portfolio/greece8.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/greece8.jpg',
+    orientation: 'portrait',
+    location: 'greece'
+  },
+  {
+    id: 'morocco14',
+    title: '',
+    alt: 'morocco14',
+    thumbnailUrl: 'assets/thumbnails/portfolio/morocco14.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/morocco14.jpg',
+    orientation: 'square',
+    location: 'morocco'
+  },
+  {
+    id: 'morocco7',
+    title: '',
+    alt: 'morocco7',
+    thumbnailUrl: 'assets/thumbnails/portfolio/morocco7.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/morocco7.jpg',
+    orientation: 'portrait',
+    location: 'morocco'
+  },
+  {
+    id: 'morocco8',
+    title: '',
+    alt: 'morocco8',
+    thumbnailUrl: 'assets/thumbnails/portfolio/morocco8.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/morocco8.jpg',
     orientation: 'square',
     location: 'morocco'
   },
@@ -129,40 +157,22 @@ export class ImageService {
     location: 'slovakia'
   },
   {
-    id: 'tatra-path',
+    id: 'morocco11',
     title: '',
-    alt: 'tatra-path',
-    thumbnailUrl: 'assets/thumbnails/portfolio/tatra-path.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/tatra-path.jpg',
-    orientation: 'square',
-    location: 'slovakia'
-  },
-  {
-    id: 'morocco25',
-    title: '',
-    alt: 'morocco25',
-    thumbnailUrl: 'assets/thumbnails/portfolio/morocco25.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/morocco25.jpg',
+    alt: 'morocco11',
+    thumbnailUrl: 'assets/thumbnails/portfolio/morocco11.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/morocco11.jpg',
     orientation: 'landscape',
     location: 'morocco'
   },
   {
-    id: 'morocco7',
+    id: 'tatra-angel3',
     title: '',
-    alt: 'morocco7',
-    thumbnailUrl: 'assets/thumbnails/portfolio/morocco7.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/morocco7.jpg',
-    orientation: 'portrait',
-    location: 'morocco'
-  },
-  {
-    id: 'hungary15',
-    title: '',
-    alt: 'hungary15',
-    thumbnailUrl: 'assets/thumbnails/portfolio/hungary15.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/hungary15.jpg',
-    orientation: 'portrait',
-    location: 'hungary'
+    alt: 'tatra-angel3',
+    thumbnailUrl: 'assets/thumbnails/portfolio/tatra-angel3.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/tatra-angel3.jpg',
+    orientation: 'landscape',
+    location: 'slovakia'
   },
   {
     id: 'hungary6',
@@ -174,31 +184,31 @@ export class ImageService {
     location: 'hungary'
   },
   {
-    id: 'hungary16',
+    id: 'morocco25',
     title: '',
-    alt: 'hungary16',
-    thumbnailUrl: 'assets/thumbnails/portfolio/hungary16.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/hungary16.jpg',
-    orientation: 'portrait',
-    location: 'hungary'
+    alt: 'morocco25',
+    thumbnailUrl: 'assets/thumbnails/portfolio/morocco25.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/morocco25.jpg',
+    orientation: 'landscape',
+    location: 'morocco'
   },
   {
-    id: 'spain4',
+    id: 'tatra-angel2',
     title: '',
-    alt: 'spain4',
-    thumbnailUrl: 'assets/thumbnails/portfolio/spain4.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/spain4.jpg',
-    orientation: 'portrait',
-    location: 'spain'
+    alt: 'tatra-angel2',
+    thumbnailUrl: 'assets/thumbnails/portfolio/tatra-angel2.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/tatra-angel2.jpg',
+    orientation: 'landscape',
+    location: 'slovakia'
   },
   {
-    id: 'hungary10',
+    id: 'morocco5',
     title: '',
-    alt: 'hungary10',
-    thumbnailUrl: 'assets/thumbnails/portfolio/hungary10.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/hungary10.jpg',
-    orientation: 'ultrawide',
-    location: 'hungary'
+    alt: 'morocco5',
+    thumbnailUrl: 'assets/thumbnails/portfolio/morocco5.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/morocco5.jpg',
+    orientation: 'landscape',
+    location: 'morocco'
   },
   {
     id: 'greece4',
@@ -246,15 +256,6 @@ export class ImageService {
     location: 'greece'
   },
   {
-    id: 'morocco11',
-    title: '',
-    alt: 'morocco11',
-    thumbnailUrl: 'assets/thumbnails/portfolio/morocco11.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/morocco11.jpg',
-    orientation: 'landscape',
-    location: 'morocco'
-  },
-  {
     id: 'austria',
     title: '',
     alt: 'austria',
@@ -264,13 +265,13 @@ export class ImageService {
     location: 'austria'
   },
   {
-    id: 'morocco5',
+    id: 'hungary15',
     title: '',
-    alt: 'morocco5',
-    thumbnailUrl: 'assets/thumbnails/portfolio/morocco5.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/morocco5.jpg',
-    orientation: 'landscape',
-    location: 'morocco'
+    alt: 'hungary15',
+    thumbnailUrl: 'assets/thumbnails/portfolio/hungary15.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/hungary15.jpg',
+    orientation: 'portrait',
+    location: 'hungary'
   },
   {
     id: 'morocco10',
@@ -282,6 +283,24 @@ export class ImageService {
     location: 'morocco'
   },
   {
+    id: 'hungary16',
+    title: '',
+    alt: 'hungary16',
+    thumbnailUrl: 'assets/thumbnails/portfolio/hungary16.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/hungary16.jpg',
+    orientation: 'portrait',
+    location: 'hungary'
+  },
+  {
+    id: 'tatra-path',
+    title: '',
+    alt: 'tatra-path',
+    thumbnailUrl: 'assets/thumbnails/portfolio/tatra-path.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/tatra-path.jpg',
+    orientation: 'square',
+    location: 'slovakia'
+  },
+  {
     id: 'morocco15',
     title: '',
     alt: 'morocco15',
@@ -291,33 +310,16 @@ export class ImageService {
     location: 'morocco'
   },
   {
-    id: 'morocco9',
+    id: 'tatras2',
     title: '',
-    alt: 'morocco9',
-    thumbnailUrl: 'assets/thumbnails/portfolio/morocco9.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/morocco9.jpg',
-    orientation: 'square',
-    location: 'morocco'
-  },
-  {
-    id: 'spain3',
-    title: '',
-    alt: 'spain3',
-    thumbnailUrl: 'assets/thumbnails/portfolio/spain3.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/spain3.jpg',
-    orientation: 'portrait',
-    location: 'hungary'
-  },
-  {
-    id: 'hungary8',
-    title: '',
-    alt: 'hungary8',
-    thumbnailUrl: 'assets/thumbnails/portfolio/hungary8.jpg',
-    midSizedUrl: 'assets/mid-sized/portfolio/hungary8.jpg',
-    orientation: 'panorama',
-    location: 'hungary'
+    alt: 'tatras2',
+    thumbnailUrl: 'assets/thumbnails/portfolio/tatras2.jpg',
+    midSizedUrl: 'assets/mid-sized/portfolio/tatras2.jpg',
+    orientation: 'ultrawide',
+    location: 'slovakia'
   }
-  ];
+]
+    
 
   private readonly galleryImages: SiteImage[] = [
     {
@@ -927,6 +929,60 @@ export class ImageService {
       midSizedUrl: 'assets/mid-sized/portfolio/hungary18.jpg',
       orientation: 'portrait',
       location: 'hungary'
+    },
+    {
+      id: 'greece8',
+      title: '',
+      alt: 'greece8',
+      thumbnailUrl: 'assets/thumbnails/portfolio/greece8.jpg',
+      midSizedUrl: 'assets/mid-sized/portfolio/greece8.jpg',
+      orientation: 'portrait',
+      location: 'greece'
+    },
+    {
+      id: 'tatra-angel2',
+      title: '',
+      alt: 'tatra-angel2',
+      thumbnailUrl: 'assets/thumbnails/portfolio/tatra-angel2.jpg',
+      midSizedUrl: 'assets/mid-sized/portfolio/tatra-angel2.jpg',
+      orientation: 'landscape',
+      location: 'slovakia'
+    },
+    {
+      id: 'tatra-angel3',
+      title: '',
+      alt: 'tatra-angel3',
+      thumbnailUrl: 'assets/thumbnails/portfolio/tatra-angel3.jpg',
+      midSizedUrl: 'assets/mid-sized/portfolio/tatra-angel3.jpg',
+      orientation: 'landscape',
+      location: 'slovakia'
+    },
+    {
+      id: 'tatras',
+      title: '',
+      alt: 'tatras',
+      thumbnailUrl: 'assets/thumbnails/portfolio/tatras.jpg',
+      midSizedUrl: 'assets/mid-sized/portfolio/tatras.jpg',
+      orientation: 'ultrawide',
+      location: 'slovakia'
+    },
+    {
+      id: 'tatras2',
+      title: '',
+      alt: 'tatras2',
+      thumbnailUrl: 'assets/thumbnails/portfolio/tatras2.jpg',
+      midSizedUrl: 'assets/mid-sized/portfolio/tatras2.jpg',
+      orientation: 'ultrawide',
+      location: 'slovakia'
+    },
+    {
+      id: 'tatras3',
+      title: '',
+      alt: 'tatras3',
+      thumbnailUrl: 'assets/thumbnails/portfolio/tatras3.jpg',
+      midSizedUrl: 'assets/mid-sized/portfolio/tatras3.jpg',
+      orientation: 'portrait',
+      location: 'slovakia'
     }
   ];
 
